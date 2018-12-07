@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">c7_listview</string>
+
+    <string-array name="options">
+        <item>Drinks</item>
+        <item>Food</item>
+        <item>Store</item>
+    </string-array>
+    <string name="title_activity_drink_category">DrinkCategoryActivity</string>
+</resources>

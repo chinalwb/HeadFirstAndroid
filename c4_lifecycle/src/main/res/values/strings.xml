@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">c4_lifecycle</string>
+    <string name="title_activity_c4__second">C4_SecondActivity</string>
+</resources>
