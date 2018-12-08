@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/HeadFirstAndroid.iml" filepath="$PROJECT_DIR$/.idea/HeadFirstAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/c4_lifecycle/c4_lifecycle.iml" filepath="$PROJECT_DIR$/c4_lifecycle/c4_lifecycle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/c5_view_and_viewgroups/c5_view_and_viewgroups.iml" filepath="$PROJECT_DIR$/c5_view_and_viewgroups/c5_view_and_viewgroups.iml" />
+      <module fileurl="file://$PROJECT_DIR$/c7_listview/c7_listview.iml" filepath="$PROJECT_DIR$/c7_listview/c7_listview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/c8_toolbar/c8_toolbar.iml" filepath="$PROJECT_DIR$/c8_toolbar/c8_toolbar.iml" />
+    </modules>
+  </component>
+</project>

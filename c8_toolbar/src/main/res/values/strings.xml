@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">c8_toolbar</string>
+    <string name="order_activity_name">Order Activity</string>
+    <string name="menu_share">Share</string>
+</resources>

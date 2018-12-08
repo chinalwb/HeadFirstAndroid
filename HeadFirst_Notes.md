@@ -1,5 +1,14 @@
 ## HeadFirst
 
+### About Jetpack
+
+* Use support libraries: [Reference](https://developer.android.com/jetpack/androidx/migrate)
+
+```
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
+```
+
 
 ### 2. Most apps need to repond to the user in some way
 
@@ -218,6 +227,37 @@ ArrayAdapter<Drink> listAdapter = new ArrayAdapter<>(
 	Drink.drinks // ArrayAdapter 默认调用这个数组中每个元素的 toString 方法
 );
 ```
+
+### 8. Material Theme Toolbar
+
+* Theme 应用在Application 或 Activity 中，用来让App中的页面看起来样式是统一的
+* Support Library: 有些新功能只有在新的API版本中才能使用，比如Material Theme是在API Level 21中引入的，那么就存在一个问题，如果我们使用了这个Theme，默认只能在Android 5.0以上的设备上运行，那如果在旧设备上怎么处理呢？答案就是 使用 Support Library. 所以可以理解 Support Library 就是让旧版本的手机上能用上新版本的一些特性而出现的。
+* 常见的Support Libraries有：
+	1. v4 Support Library
+	2. v7 AppCompat Library
+	3. v7 Cardview Library
+	4. Constraint Layout Library
+	5. v7 RecyclerView Library
+	6. Design Support Library
+
+* Support Libraries 最低可以支持到哪个版本？
+	- 不同的Support Library版本支持的最低版本不一样
+	- 在Support Library 24.2.0之前，v4前缀的最低可以支持到API level 4, v7前缀的最低可以支持到API level 7
+	- 在24.2.0发布之后，最低支持的版本改为了API level 9
+	- 以后发布的support libraries最低支持版本还会继续增大
+
+* android:layout_height="?attr/actionBarSize" -- ?attr/xx - ?attr 前缀的属性表示从当前theme中引用一个属性值
+* android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" -- ThemeOverlay 是一个特殊的theme属性，他能在当前theme基础上改变一些属性值
+* ShareActionProvider
+	- 如果你的Activity想要在Toolbar的menu上加分享按钮，那么可以用ShareActionProvider来做
+	- 用ShareActionProvider不需要给menu item的定义中加上 icon 图片，因为ShareActionProvider自己会加上图标
+	- 除了在 menu_main.xml 中加上 ShareActionProvider 的menu item之外，还需要在Activity中进行设置
+	- `onCreateOptionsMenu` 方法中，用 `MenuItemCompt.getActionProvider(menuItem)` 来获得一个`ShareActionProvider`的引用
+	- 调用 ShareActionProvider的 setShareIntent(intent) 方法
+	- 把 intent 传递给 ShareActionProvider 之后，在 ShareActionProvider 内部会根据传入的 Intent 列出所有可以处理这个 intent 的 apps，用户点击某个app的时候，就会把当初传递给 ShareActionProvider 的那个intent 传递给最终选定的那个APP
+
+	
+
 	
 	
 	
