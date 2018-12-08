@@ -256,10 +256,50 @@ ArrayAdapter<Drink> listAdapter = new ArrayAdapter<>(
 	- 调用 ShareActionProvider的 setShareIntent(intent) 方法
 	- 把 intent 传递给 ShareActionProvider 之后，在 ShareActionProvider 内部会根据传入的 Intent 列出所有可以处理这个 intent 的 apps，用户点击某个app的时候，就会把当初传递给 ShareActionProvider 的那个intent 传递给最终选定的那个APP
 
-	
 
-	
-	
+### 9. Fragments
+
+* Fragment#onCreateView(inflater, container, savedInstanceState)
+
+```
+public View onCreateView(LayoutInflater inflater, // 用来解析layout xml 文件	ViewGroup container, // 将fragment添加到这个控件中
+	Bundle savedInstanceState) { // 之前保存下来的 fragment 的状态	return inflater.inflate(
+		R.layout.xxx, // 要解析的 xml 文件
+		container,  // parent 控件。解析 layout 文件所用的父控件，有两个用途：1. 用来协助计算 layout xml 中根控件的大小 2. 如果第三个参数 attachToRoot 为 true，则需要把解析出来的那个view加到父控件中
+		false); // 是否加到父控件中
+}
+```
+
+* 每个 Fragment 都必须有一个无参数的构造方法。这是因为Android在需要的时候会用调用这个无参构造方法来对fragment进行重新初始化。如果没有的话在执行这个重新初始化的过程当中就会抛出异常。
+
+* Activity lifecycle V.S. Fragment lifecycle
+
+Activity|Fragment
+---|:--
+onCreate(1)|onAttach(Context) // Fragment gets attached to Activity
+onCreate(2)|onCreateBundle(Bundle) // similar to Activity's onCreate, can be used to do the iniital setup of the fragment
+onCreate(3)|onCreateView(LayoutInflater, ViewGroup, Bundle) // Fragment uses a layout inflator to create view
+onCreate(4)|onActivityCreated(Bundle) // Called when the activity's onCreate() has completed
+onStart()|onStart() // Called when fragment becomes visible
+onResume()|onResume() // Called when fragment is visible and actively running -- i.e.: called when fragment is visible and gets focus
+onPause()|onPause() // Called when fragment is no longer interacting with the user
+onStop()|onStop() // Called when fragment is no longer visible to the user
+onDestroy(1)|onDestroyView() // Fragment wants to clear away any resources associated with its view
+onDestroy(2)|onDestroy() // Fragment clears away any resources created by fragment itself
+onDestroy(3)|onDetach() // Called when fragment finally loses contact with the activity
+
+* Fragment#getView() --> returns the root view of the fragment
+
+* A1: 为什么Fragment没有findViewById() 方法？
+	- Q1: 因为Fragment不是view
+	- A2: 那为什么Activity有findViewById()方法？
+	- Q2: 因为Activity#findViewById是调用了 getWindow().findViewById(), 而getWindow()返回的Window对象本身也不是View，但是Window#findViewById()是调用了Window的getDecorView()#findViewById(), 而 getDecorView() 返回了一个View对象
+	- A3: 那 DecorView 又是什么呢？
+	- Q3: DecorView是整个Window的根View
+
+
+
+
 	
 	
 	

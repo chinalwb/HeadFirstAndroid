@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/c5_view_and_viewgroups" />
             <option value="$PROJECT_DIR$/c7_listview" />
             <option value="$PROJECT_DIR$/c8_toolbar" />
+            <option value="$PROJECT_DIR$/c9_fragment" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
