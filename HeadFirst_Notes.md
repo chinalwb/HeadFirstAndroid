@@ -326,5 +326,10 @@ onDestroy(3)|onDetach() // Called when fragment finally loses contact with the a
 * Fragment#onCreate(Bundle savedInstanceState) // 当Fragment重建的时候之前保存的状态会传递到 savedInstanceState 里面
 
 
- 
-	
+### 11. Dynamic Fragment - Nested Fragments
+
+* `onCreate(Bundle savedInstanceState)` if `savedInstanceState` is null, this means that Activity is being created for the first time; or else if the `savedInstanceState` is not null, that means Activity is being recreated after having been destroyed.
+
+* `getFragmentManager()` returns the fragment manager associated with the fragment's parent activity. Any fragment transaction you create using this fragment manager is added to the back stack as a separate transaction.
+
+* `getChildFragmentManager()` returns the fragment manager associated with the fragment's parent fragment. Any fragment transaction you create using this fragment manager is added to the back stack insdie the parent fragment transaction, not a separate transaction.
