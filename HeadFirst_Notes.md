@@ -297,9 +297,34 @@ onDestroy(3)|onDetach() // Called when fragment finally loses contact with the a
 	- A3: 那 DecorView 又是什么呢？
 	- Q3: DecorView是整个Window的根View
 
+### 10. Tablet
 
+* res/layout-large 文件夹只有在大屏幕的设备上才会用到
+* if you want to create a layout that willl only be used by very large tablets in landscape mode, you would create a folder called **layout-xlarge-land** and put the layout file in that folder
+* Android会在App运行的时候根据运行的设备自动去寻找最匹配的配置文件，如果没有最匹配的则找比当前期望小的配置项，如果只有比当前大的配置项的话Android不会用那些文件，App会crash。-- Android decides at runtime which resources to use by checking the spec of the device and looking for the best match. If there is no exact match, it will use resource designed for a smaller than the current one. If resources are only available for screens larger than the current one, Android won't use them and the app will crash.
+* AndroidManifest.xml, use `supports-screens` to specify which screen size you want or don't want to support
 
+```
+<supports-screens android:smallScreens="false" />
+```
+
+* Use `FrameLayout` as fragment container when you want to change the fragment at runtime
+* Using FragmentTransaction to change the fragment
+	1. begingTransaction
+		`getSupportFragmentManager().beginTransaction()`
+	2. specify the changes
+		* transaction.add(R.id.fragment_container, fragment)
+		* transaction.replace(R.id.fragment_container, fragment)
+		* transaction.remove(fragment)
+		* transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE) // 指定动画
+		* transaction.addToBackStack(null)
+	3. commit
+		* transaction.commit();
 
 	
-	
+* Fragment#onSaveInstanceState(Bundle outState) // 当Fragment被销毁的之前回调这个方法来保存状态
+* Fragment#onCreate(Bundle savedInstanceState) // 当Fragment重建的时候之前保存的状态会传递到 savedInstanceState 里面
+
+
+ 
 	
