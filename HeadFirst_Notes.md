@@ -277,7 +277,7 @@ public View onCreateView(LayoutInflater inflater, // 用来解析layout xml 文�
 Activity|Fragment
 ---|:--
 onCreate(1)|onAttach(Context) // Fragment gets attached to Activity
-onCreate(2)|onCreateBundle(Bundle) // similar to Activity's onCreate, can be used to do the iniital setup of the fragment
+onCreate(2)|onCreate(Bundle savedInstanceState) // similar to Activity's onCreate, can be used to do the iniital setup of the fragment
 onCreate(3)|onCreateView(LayoutInflater, ViewGroup, Bundle) // Fragment uses a layout inflator to create view
 onCreate(4)|onActivityCreated(Bundle) // Called when the activity's onCreate() has completed
 onStart()|onStart() // Called when fragment becomes visible
@@ -333,3 +333,10 @@ onDestroy(3)|onDetach() // Called when fragment finally loses contact with the a
 * `getFragmentManager()` returns the fragment manager associated with the fragment's parent activity. Any fragment transaction you create using this fragment manager is added to the back stack as a separate transaction.
 
 * `getChildFragmentManager()` returns the fragment manager associated with the fragment's parent fragment. Any fragment transaction you create using this fragment manager is added to the back stack insdie the parent fragment transaction, not a separate transaction.
+
+* About the lifecycle of Activity and Fragment
+	- Activity#onCreate(Bundle savedInstanceState) 对应了 Fragment 的4个生命周期回调方法：
+	- Fragment#onAttach(Context context)
+	- Frgment#onCreate(Bundle savedInstanceState) 做Fragment的初始化操作
+	- Fragment#onCreateView(LayoutInflater, ViewGroup, Bundle savedInstanceState) 创建fragment 的 view
+	- Fragment#onActivityCreated(Bundle savedInstanceState)

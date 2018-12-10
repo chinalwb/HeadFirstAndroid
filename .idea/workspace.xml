@@ -6,7 +6,8 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="XX" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="CMakeSettings">
@@ -18,11 +19,25 @@
     <list default="true" id="b00fa509-2e44-4a88-be4a-0b0218c39a3f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_28_0_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HeadFirst_Notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/HeadFirst_Notes.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c4_lifecycle/c4_lifecycle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/c4_lifecycle/c4_lifecycle.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c7_listview/c7_listview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview/c7_listview.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c8_toolbar/c8_toolbar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar/c8_toolbar.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c9_fragment/c9_fragment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/c9_fragment/c9_fragment.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c9_fragment/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c9_fragment/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/WorkoutDetailFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/WorkoutDetailFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c9_fragment/src/main/res/layout/fragment_workout_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c9_fragment/src/main/res/layout/fragment_workout_detail.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,117 +59,36 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-              <folding>
-                <element signature="e#1687#1688#0" expanded="true" />
-                <element signature="e#1738#1739#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Fragment.java" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/androidx/fragment/app/Fragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="1552" column="7" lean-forward="true" selection-start-line="1552" selection-start-column="7" selection-end-line="1552" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#115782#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/res/layout-large/activity_main.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WorkoutListFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/WorkoutListFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="54" column="31" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListFragment.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/15f739a1ed4d9905c64d9318183062c8/jars/classes.jar!/android/support/v4/app/ListFragment.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-26">
-              <caret line="94" column="16" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
-              <folding>
-                <element signature="e#1347#1560#0" expanded="true" />
-                <element signature="e#1559#1560#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdapterView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/widget/AdapterView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="280" column="24" selection-start-line="280" selection-start-column="13" selection-end-line="280" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WorkoutDetailFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/WorkoutDetailFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
-              <folding>
-                <element signature="e#1507#1508#0" expanded="true" />
-                <element signature="e#1543#1544#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Fragment.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/15f739a1ed4d9905c64d9318183062c8/jars/classes.jar!/android/support/v4/app/Fragment.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="1105" selection-start-line="1105" selection-end-line="1105" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/AndroidManifest.xml">
           <provider editor-type-id="android-manifest">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+            <state relative-caret-position="345">
+              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TempActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/TempActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="529">
+              <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StopwatchFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/StopwatchFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-71">
+              <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -167,6 +101,7 @@
       <find>mOnClickListener</find>
       <find>onCreateView</find>
       <find>performCreateView</find>
+      <find>runTimer</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -7542,23 +7477,28 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/c9_fragment/src/main/res/layout/fragment_blank.xml" />
-        <option value="$PROJECT_DIR$/c9_fragment/src/main/res/layout/fragment_workout_detail.xml" />
         <option value="$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/Workout.java" />
         <option value="$PROJECT_DIR$/c9_fragment/src/main/res/layout/activity_detail.xml" />
         <option value="$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/DetailActivity.java" />
         <option value="$PROJECT_DIR$/c9_fragment/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/WorkoutListFragment.java" />
         <option value="$PROJECT_DIR$/c9_fragment/src/main/res/layout-large/activity_main.xml" />
-        <option value="$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/WorkoutDetailFragment.java" />
         <option value="$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/MainActivity.java" />
+        <option value="$PROJECT_DIR$/c9_fragment/src/main/res/layout/fragment_stopwatch.xml" />
+        <option value="$PROJECT_DIR$/c9_fragment/src/main/res/layout/activity_temp.xml" />
+        <option value="$PROJECT_DIR$/c9_fragment/src/main/res/layout/fragment_workout_detail.xml" />
+        <option value="$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/WorkoutDetailFragment.java" />
+        <option value="$PROJECT_DIR$/c9_fragment/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/TempActivity.java" />
+        <option value="$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/StopwatchFragment.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="767" />
-    <option name="y" value="23" />
+    <option name="x" value="820" />
+    <option name="y" value="22" />
     <option name="width" value="1150" />
-    <option name="height" value="1177" />
+    <option name="height" value="1089" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -7586,17 +7526,6 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="c9_fragment" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
-            <path>
-              <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="c9_fragment" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="c9_fragment" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -7611,11 +7540,11 @@
     <property name="DEBUGGABLE_PROCESS" value="com.chinalwb.c9_fragment" />
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="Fragment.java&#9;FILE&#9;file:///Users/wliu/Library/Android/sdk/sources/android-28/androidx/fragment/app/Fragment.java&#10;WorkoutD&#9;FILE&#9;file:///Users/wliu/Documents/Android/GitHub/HeadFirstAndroid/c9_fragment/src/main/java/com/chinalwb/c9_fragment/WorkoutDetailFragment.java&#10;DetailFragment&#9;FILE&#9;file:///Users/wliu/Library/Android/sdk/sources/android-28/androidx/leanback/app/DetailsFragment.java" />
+    <property name="SearchEverywhereHistoryKey" value="Fragment.java&#9;FILE&#9;file:///Users/wliu/Library/Android/sdk/sources/android-28/android/app/Fragment.java&#10;WorkoutD&#9;FILE&#9;file:///Users/wliu/Documents/Android/GitHub/HeadFirstAndroid/c9_fragment/src/main/java/com/chinalwb/c9_fragment/WorkoutDetailFragment.java&#10;DetailFragment&#9;FILE&#9;file:///Users/wliu/Library/Android/sdk/sources/android-28/androidx/leanback/app/DetailsFragment.java" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="device.picker.selection" value="Nexus_5X_API_26" />
+    <property name="device.picker.selection" value="Tablet_-_Nexus_7_API_28" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
@@ -7914,7 +7843,7 @@
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="true" />
       <option name="PREFERRED_AVD" value="" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
@@ -8030,39 +7959,38 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="767" y="23" width="1150" height="1177" extended-state="0" />
-    <editor active="true" />
+    <frame x="820" y="22" width="1150" height="1089" extended-state="0" />
     <layout>
+      <window_info anchor="bottom" id="Android Profiler" order="7" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Android Profiler" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info id="Build Variants" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="right" id="Preview" weight="0.32942238" />
-      <window_info anchor="bottom" id="Version Control" weight="0.23703703" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Build Variants" order="2" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Preview" order="3" weight="0.32942238" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Logcat" weight="0.47314814" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.23703703" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Logcat" order="7" visible="true" weight="0.32920536" />
       <window_info id="Captures" order="2" weight="0.25" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.18592058" />
-      <window_info anchor="bottom" id="Build" weight="0.32962963" />
-      <window_info anchor="right" id="Gradle" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18592058" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.34262127" />
+      <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
-      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Device File Explorer" order="3" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -8083,53 +8011,104 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/WorkoutDetailFragment.java</url>
-          <line>32</line>
+          <line>35</line>
           <properties />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/WorkoutDetailFragment.java</url>
-          <line>59</line>
-          <properties />
-          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/res/layout/fragment_detail.xml">
+    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/res/layout/activity_main.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state />
+        <state relative-caret-position="216">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/DetailFragment.java">
+    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state />
+        <state relative-caret-position="1296">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/res/layout-large/activity_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/WorkoutListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="54" column="31" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/15f739a1ed4d9905c64d9318183062c8/jars/classes.jar!/android/support/v4/app/ListFragment.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1971">
+          <caret line="94" column="16" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/widget/AdapterView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6561">
+          <caret line="280" column="24" selection-start-line="280" selection-start-column="13" selection-end-line="280" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/WorkoutDetailFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1269">
+          <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/15f739a1ed4d9905c64d9318183062c8/jars/classes.jar!/android/support/v4/app/Fragment.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25947">
+          <caret line="1105" selection-start-line="1105" selection-end-line="1105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/androidx/fragment/app/Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41904">
+          <caret line="1552" column="7" lean-forward="true" selection-start-line="1552" selection-start-column="7" selection-end-line="1552" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#115782#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/res/layout/fragment_detail.xml" />
+    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/DetailFragment.java" />
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/androidx/leanback/app/DetailsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
           <caret line="183" column="17" lean-forward="true" selection-start-line="183" selection-start-column="17" selection-end-line="183" selection-end-column="17" />
           <folding>
             <element signature="e#0#39786#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/res/layout/fragment_workout_detail.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="e#452#482#0" expanded="true" />
-            <element signature="e#685#715#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -8174,18 +8153,145 @@
     </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/widget/AdapterView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
+        <state relative-caret-position="6561">
           <caret line="280" column="24" selection-start-line="280" selection-start-column="13" selection-end-line="280" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/15f739a1ed4d9905c64d9318183062c8/jars/classes.jar!/android/support/v4/app/ListFragment.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
+        <state relative-caret-position="1971">
           <caret line="94" column="16" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/WorkoutListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="54" column="31" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/res/layout-large/activity_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1296">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/androidx/fragment/app/Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="1556" column="34" selection-start-line="1556" selection-start-column="34" selection-end-line="1556" selection-end-column="34" />
           <folding>
-            <element signature="e#1347#1560#0" expanded="true" />
-            <element signature="e#1559#1560#0" expanded="true" />
+            <element signature="e#0#115782#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c4_lifecycle/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="73" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c4_lifecycle/src/main/java/com/chinalwb/c4_lifecycle/C4_SecondActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c4_lifecycle/src/main/java/com/chinalwb/c4_lifecycle/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="137" column="4" selection-start-line="137" selection-start-column="4" selection-end-line="144" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/res/layout/fragment_stopwatch.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/res/layout/activity_temp.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/15f739a1ed4d9905c64d9318183062c8/jars/classes.jar!/android/support/v4/app/Fragment.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/app/Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="920" selection-start-line="920" selection-end-line="920" />
+          <folding>
+            <element signature="e#0#123293#0" expanded="true" />
+            <element signature="e#36931#36932#0" expanded="true" />
+            <element signature="e#36971#36972#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/res/layout/fragment_workout_detail.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding>
+            <element signature="e#513#543#0" expanded="true" />
+            <element signature="e#722#752#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/WorkoutDetailFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="42" column="33" lean-forward="true" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -8195,73 +8301,24 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        <state relative-caret-position="345">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/TempActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        <state relative-caret-position="529">
+          <caret line="31" column="56" selection-start-line="31" selection-start-column="56" selection-end-line="31" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/15f739a1ed4d9905c64d9318183062c8/jars/classes.jar!/android/support/v4/app/Fragment.class">
+    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/StopwatchFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="1105" selection-start-line="1105" selection-end-line="1105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/WorkoutListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="54" column="31" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/WorkoutDetailFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
+        <state relative-caret-position="-71">
+          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
           <folding>
-            <element signature="e#1507#1508#0" expanded="true" />
-            <element signature="e#1543#1544#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/res/layout-large/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="e#1687#1688#0" expanded="true" />
-            <element signature="e#1738#1739#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/androidx/fragment/app/Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="1552" column="7" lean-forward="true" selection-start-line="1552" selection-start-column="7" selection-end-line="1552" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#115782#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

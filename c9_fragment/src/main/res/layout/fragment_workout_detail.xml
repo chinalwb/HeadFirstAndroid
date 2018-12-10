@@ -21,4 +21,10 @@
         android:text="@string/hello_blank_fragment"
         />
 
+    <FrameLayout
+        android:id="@+id/stopwatch_fragment_container"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
 </LinearLayout>
