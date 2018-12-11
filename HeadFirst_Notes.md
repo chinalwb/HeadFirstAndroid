@@ -402,6 +402,23 @@ onDestroy(3)|onDetach() // Called when fragment finally loses contact with the a
 	- app:layout_collapseMode="pin" // 保持toolbar上的控件固定在顶部
 	- app:layout_collapseMode="parallax" // collapsing toolbar 中的image用这个mode
 
+----
+### CoordinatorLayout使用的几个要素
+1. CoordinatorLayout - CoordinatorLayout可以使其中一部分子view响应另外一个子view的滑动事件
+2. AppBarLayout - **theme** 确保toolbar上的文字颜色不被AppBarLayout的引入而改变
+3. Toolbar - **layout_scrollFlags="scroll|enterAlways"** 当其他子view滚动的时候，这个view会跟着一起滚动
+4. TabLayout - **layout_scrollFlags="scroll|enterAlways"** 当其他子view滚动的时候，这个view会跟着一起滚动
+5. ViewPager - **layout_behavior="@string/appbar_scrolling_view_behavior"** CoordinatorLayout会根据这个view的滑动事件来通知其他跟随滑动的子view一起滑动
+6. NestedScrollView - **可滚动的内容需要放到这个layout中**，CoordinatorLayout只会监听这个Layout的滚动事件然后做出响应。（另外一个跟CoordinatorLayout一起配合工作的是 RecyclerView）
+
+
+### CollapsingToolbarLayout使用的几个要素
+1. CollapsingToolbarLayout - 用在AppBarLayout只内，同时 AppBarLayout 用在CoordinatorLayout 之内
+2. 需要为CollapsingToolbarLayout加上 (scrollFlags) **app:layout_scrollFlags="scroll|exitUntilCollapsed"** 属性
+3. CollaspingToolbarLayout 的子view需要提供 **layout_collapseMode** 属性，该属性有3个选项： 1. parallax 2. pin 3. none
+4. 同样因为一切的协调者都是由 CoordinatorLayout 负责的，所以必须有一个 NestedScrollView来包围要显示的主体内容
+
+
 	
 
 
