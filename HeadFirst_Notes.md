@@ -9,6 +9,9 @@
     implementation 'androidx.constraintlayout:constraintlayout:1.1.2'
 ```
 
+### Where to find the android support library configurations?
+* [Support Library Packages](https://developer.android.com/topic/libraries/support-library/packages)
+
 
 ### 2. Most apps need to repond to the user in some way
 
@@ -340,3 +343,70 @@ onDestroy(3)|onDetach() // Called when fragment finally loses contact with the a
 	- Frgment#onCreate(Bundle savedInstanceState) 做Fragment的初始化操作
 	- Fragment#onCreateView(LayoutInflater, ViewGroup, Bundle savedInstanceState) 创建fragment 的 view
 	- Fragment#onActivityCreated(Bundle savedInstanceState)
+
+### 12. ViewPager
+
+* `FragmentPagerAdapter` - 专门用来把Fragment以page的方式加到ViewPager中。当ViewPager中包含的页面相对较少的时候比较适用，因为用户访问过的所有的Fragment都被存放在内存中。
+* `FragmentStatePagerAdapter` - 如果ViewPager中有大量的pages，则使用 FragmentStatePagerAdapter.
+
+* 覆盖 `FragmentPagerAdapter` 的两个方法:
+	- `getCount()` 返回view的数量
+	- `getItem(int position)` 根据position返回Fragment
+	- `getPageTitle(int position)` 根据position返回title
+	- `pager.setAdapter(FragmentPagerAdapter)`
+
+* AppBarLayout and TabLayout
+	- TabLayout is to display tabs
+	- AppBarLayout is to group tabs and toolbar together
+
+* Design Support library is for Material Design purpose
+
+* CoordinatorLayout is to coordinate animations between views
+	- 所有的那些你想让他们互相合作来完成动画的view都必须放到CoordinatorLayout中
+	- A CoordinatorLayout allows the behavior of one view to affect the behavior of another - 用 CoordinatorLayout 来实现当某一个view的行为改变的同时也去改变另外一个view的行为
+
+* app:layout_behavior // 当用户滑动这个控件的时候，我希望其他控件可以响应
+```
+<ViewPager
+	...
+	app:layout_behavior="@string/appbar_scrolling_view_behavior" // This tells CoordinatorLayout you want to react to when user scrolling the content
+/>
+```
+
+* app:layout_scrollFlags // 当其他控件滑动的时候，这里设定如何响应
+
+```
+<Toolbar
+	...
+	app:layout_scrollFlags="scroll|enterAlways"
+/>
+```
+	
+- layout_scrollFlags: scroll 表示当用户滑动其他控件的时候，这个控件(Toolbar)也跟着一起滑动。如果没有设定这个值，这个控件就不会滑动。
+- enterAlways: 当用户滑动其他view的时候，这个view会快速滑动到他最初的位置。如果没有设定这个值，他也会滑动，但是会比较慢。
+- exitUntilCollapsed: This means we want the toolbar to collapse until it's done collapsing
+
+* `NestedScrollView` - comes from Design Support Library
+* CoordinatorLayout only listens for nested scroll events. So you MUST use `NestedScrollView` if you want CoordinatorLayout works; one of the other view works with CoordinatorLayout is RecyclerView.
+* `NestedScrollView` can only have one direct child
+
+* Collapsing Toolbar - 可以滑动的toolbar
+* Collapsing Toolbar 的最初状态是展开的大图模式，当用户向上滑动的时候，他就开始收缩，直到完全不可见。
+	- app:contentScrim="?attr/colorPrimary"
+
+* App bar layout attributes
+	- android:layout_height = "300dp" // 为App bar的内容设定一个高度，这是 collapsing toolbar 展开时的最大高度
+	- android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+
+* Toolbar attributes
+	- app:layout_collapseMode="pin" // 保持toolbar上的控件固定在顶部
+	- app:layout_collapseMode="parallax" // collapsing toolbar 中的image用这个mode
+
+	
+
+
+
+
+
+
+
