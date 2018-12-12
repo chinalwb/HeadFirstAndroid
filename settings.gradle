@@ -1,1 +1,1 @@
-include ':app', ':c4_lifecycle', ':c5_view_and_viewgroups', ':c7_listview', ':c8_toolbar', ':c9_fragment'
+include ':app', ':c4_lifecycle', ':c5_view_and_viewgroups', ':c7_listview', ':c8_toolbar', ':c9_fragment', ':c14_navigation_drawer'

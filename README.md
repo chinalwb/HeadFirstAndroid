@@ -597,8 +597,76 @@ class CaptionedImagesAdapter extends RecyclerView.Adapter<CaptionedImagesAdapter
 
 ### 14. Navigation Drawers
 
+* Go over points
+	1. Create toolbar layout:
+		```
+		<android.support.v7.widget.Toolbar
+			xmlns:android="xx"
+			android:layout="match_parent"
+			android:height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+		/>
+		```
 
+	2. Add a NoActionBar theme:
+		```
+		<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+			<!-- Use NoActionBar theme because we want our Toolbar to replace the default app bar -->
+			<item name="colorPrimary">...</item>
+		</style>
+		```
+		
+#### Navigation drawer layout
+1. The header
+	- The header is a FrameLayout, contains ImageView and LinearLayout.
+	- The LinearLayout's layout_gravity="bottom|left"
+2. The options are in menus.xml
+	- Each option is a menu-item
+	- `<item` must be within a <menu /> tag
+	- `<item` can be just a string, and contains other sub-menus
+	- items can be within a `<group` tag
+	- `<group android:checkableBehavior="single" ... />`
 
+#### How to create a navigation drawer?
+1. `DrawerLayout` - use this as the root element of the Activity's layout
+2. DrawerLayout needs to contain:
+	- The activity's content as the first element
+	- A navigation view that defines the drawer as the second
+3. `NavigationView`
+	- `android:layout_gravity=“start”` - this defines the drawer will be at left
+	- `app:headerLayout="@layout/nav_header"` - this includes the drawer's header
+	- `app:menu:@menu/menu_nav` - this is the menu resource file containing the drawer's options
 
+4. Add a drawer toggle
+	- Define two string items in strings.xml, one is for `nav_open_drawer`, the other one is for `nav_close_drawer`
+	- Create a new instance of the `ActionBarDrawerToggle`
+		- The constructor of `ActionBarDrawerToggle` takes 5 params:
+		- current activity
+		- the drawer layout
+		- the toolbar layout
+		- the IDs of the two string resources above
+	- DrawerLayout.addDrawerListener(toggle) // Add the toggle to DrawerLayout
+	- toggle.syncState() // Change drawer icon upon opening and closing
 
-
+5. Respond to the user clicking items in the drawer
+	- `NavigationView.OnNavigationItemSelectedListener` - Let the Activity implements interface `NavigationView.OnNavigationItemSelectedListener`
+	- NavigationView
+	- navigationView.setNavigationItemSelectedListener(this)
+	- Override `onNavigationItemSelected(MenuItem item)`
+	- In `OnNavigationItemSelected()`, replace the fragment and close drawer
+	- Replacing fragment, there are 4 steps: 1. getSupportFragmentManager() 2. fragmentManager.beginTransaction 3. FragmentTransaction.replace(id, fragment) 4. fragmentTransaction.commit()
+	- Close drawer: drawer.closeDrawer(GravityCompat.START);
+5. Close drawer when user clicks Back button
+	```
+	@Override
+	public void onBackPressed() {
+		DrawerLayout drawer = xx;
+		if (drawer.isDrawerOpen(GravityCompat.START)) {
+			// close drawer
+			drawer.closeDrawer(GravityCompat.START);
+		} else {
+			super.onBackPressed();
+		}
+	}
+	```
