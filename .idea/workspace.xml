@@ -21,16 +21,18 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskJars.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/javaCompile/taskJars.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.6/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_28_0_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HeadFirst_Notes.md" beforeDir="false" afterPath="$PROJECT_DIR$/HeadFirst_Notes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/OrderActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/OrderActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c8_toolbar/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/PizzaFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/PizzaFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/activity_order.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/activity_order.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/fragment_top.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/fragment_top.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,40 +55,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
+      <file leaf-file-name="PizzaDetailActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/PizzaDetailActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
-              <folding>
-                <element signature="e#1324#1364#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/OrderActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="876">
-              <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1232#1413#0" expanded="true" />
-                <element signature="e#1412#1413#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="42" column="25" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="25" />
+            <state relative-caret-position="644">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,19 +67,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_order.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/res/layout/activity_order.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
+      <file leaf-file-name="PizzaFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/PizzaFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="32" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="32" />
+            <state relative-caret-position="715">
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
               <folding>
-                <element signature="e#1117#1143#0" expanded="true" />
-                <element signature="e#1740#1780#0" expanded="true" />
-                <element signature="e#2160#2185#0" expanded="true" />
-                <element signature="e#2362#2390#0" expanded="true" />
+                <element signature="e#1546#1733#0" expanded="true" />
+                <element signature="e#1732#1733#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CaptionedImagesAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/CaptionedImagesAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1552#1747#0" expanded="true" />
+                <element signature="e#2146#2147#0" expanded="true" />
+                <element signature="e#2186#2187#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,6 +101,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -7519,25 +7503,31 @@
         <option value="$PROJECT_DIR$/c9_fragment/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/TempActivity.java" />
         <option value="$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/StopwatchFragment.java" />
-        <option value="$PROJECT_DIR$/c8_toolbar/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/tool_bar.xml" />
         <option value="$PROJECT_DIR$/c8_toolbar/src/main/res/menu/menu_main.xml" />
-        <option value="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/PizzaFragment.java" />
         <option value="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/PastaFragment.java" />
         <option value="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/StoresFragment.java" />
         <option value="$PROJECT_DIR$/c8_toolbar/build.gradle" />
         <option value="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/MainActivity.java" />
         <option value="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/fragment_top.xml" />
         <option value="$PROJECT_DIR$/c8_toolbar/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/activity_order.xml" />
         <option value="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/OrderActivity.java" />
+        <option value="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/card_captioned_image.xml" />
+        <option value="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/fragment_pizza.xml" />
+        <option value="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/Pizza.java" />
+        <option value="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/activity_pizza_detail.xml" />
+        <option value="$PROJECT_DIR$/c8_toolbar/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/PizzaDetailActivity.java" />
+        <option value="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/CaptionedImagesAdapter.java" />
+        <option value="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/PizzaFragment.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="996" />
-    <option name="y" value="25" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="1021" />
+    <option name="y" value="22" />
     <option name="width" value="1015" />
     <option name="height" value="1089" />
   </component>
@@ -7569,17 +7559,6 @@
             </path>
             <path>
               <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="c8_toolbar" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="c8_toolbar" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
@@ -7597,6 +7576,8 @@
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/wliu/Documents/Android/github/HeadFirstAndroid/c8_toolbar/src/main/res/values/strings.xml&#10;string&#9;FILE&#9;file:///Users/wliu/Documents/Android/github/HeadFirstAndroid/c8_toolbar/src/main/res/values/strings.xml&#10;Fragment.java&#9;FILE&#9;file:///Users/wliu/Library/Android/sdk/sources/android-28/android/app/Fragment.java&#10;WorkoutD&#9;FILE&#9;file:///Users/wliu/Documents/Android/GitHub/HeadFirstAndroid/c9_fragment/src/main/java/com/chinalwb/c9_fragment/WorkoutDetailFragment.java&#10;DetailFragment&#9;FILE&#9;file:///Users/wliu/Library/Android/sdk/sources/android-28/androidx/leanback/app/DetailsFragment.java" />
+    <property name="android.project.structure.last.selected" value="c8_toolbar" />
+    <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="device.picker.selection" value="Nexus_5X_API_26" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/c8_toolbar/src/main/res/drawable-nodpi" />
@@ -7605,6 +7586,7 @@
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
+      <recent name="com.chinalwb.c8_toolbar" />
       <recent name="com.chinalwb.c9_fragment" />
     </key>
   </component>
@@ -8016,7 +7998,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="996" y="25" width="1015" height="1089" extended-state="0" />
+    <frame x="1021" y="22" width="1015" height="1089" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="7" />
@@ -8077,80 +8059,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/res/layout-large/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/WorkoutListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="54" column="31" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/15f739a1ed4d9905c64d9318183062c8/jars/classes.jar!/android/support/v4/app/ListFragment.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1971">
-          <caret line="94" column="16" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/widget/AdapterView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6561">
-          <caret line="280" column="24" selection-start-line="280" selection-start-column="13" selection-end-line="280" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/WorkoutDetailFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1269">
-          <caret line="56" column="27" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/15f739a1ed4d9905c64d9318183062c8/jars/classes.jar!/android/support/v4/app/Fragment.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25947">
-          <caret line="1105" selection-start-line="1105" selection-end-line="1105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/androidx/fragment/app/Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41904">
-          <caret line="1552" column="7" lean-forward="true" selection-start-line="1552" selection-start-column="7" selection-end-line="1552" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#115782#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/res/layout/fragment_detail.xml" />
-    <entry file="file://$PROJECT_DIR$/c9_fragment/src/main/java/com/chinalwb/c9_fragment/DetailFragment.java" />
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/androidx/leanback/app/DetailsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
@@ -8371,20 +8279,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#316#334#0" expanded="true" />
-            <element signature="e#811#840#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/cc5a455b13b92789ac551255c2bee332/jars/classes.jar!/android/support/v7/widget/ShareActionProvider.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -8402,13 +8296,6 @@
           <folding>
             <element signature="e#458#487#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/PizzaFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -8485,15 +8372,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/OrderActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="58" selection-start-line="17" selection-start-column="58" selection-end-line="17" selection-end-column="58" />
+        <state relative-caret-position="460">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
-            <element signature="e#1324#1364#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1232#1413#0" expanded="true" />
+            <element signature="e#1412#1413#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -8524,14 +8410,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/OrderActivity.java">
+    <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="876">
-          <caret line="40" column="29" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+        <state relative-caret-position="460">
+          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+          <folding>
+            <element signature="e#1324#1364#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/res/layout/card_captioned_image.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/d016737eb922562025de6e157f2416f0/jars/classes.jar!/android/support/v7/widget/RecyclerView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="5974" column="26" selection-start-line="5974" selection-start-column="26" selection-end-line="5974" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/res/layout/fragment_pizza.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/d016737eb922562025de6e157f2416f0/jars/classes.jar!/android/support/v7/widget/StaggeredGridLayoutManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/res/drawable-nodpi/diavolo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/res/drawable-hdpi/ic_done_white_24dp.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/Pizza.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding>
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/res/layout/activity_pizza_detail.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/cc5a455b13b92789ac551255c2bee332/jars/classes.jar!/android/support/v7/app/AppCompatActivity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="125" column="30" selection-start-line="125" selection-start-column="30" selection-end-line="125" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/CaptionedImagesAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1232#1413#0" expanded="true" />
-            <element signature="e#1412#1413#0" expanded="true" />
+            <element signature="e#1552#1747#0" expanded="true" />
+            <element signature="e#2146#2147#0" expanded="true" />
+            <element signature="e#2186#2187#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/PizzaDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/PizzaFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="e#1546#1733#0" expanded="true" />
+            <element signature="e#1732#1733#0" expanded="true" />
           </folding>
         </state>
       </provider>

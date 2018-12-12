@@ -158,8 +158,8 @@ public void onClickFindBeer(View view) {
 	3. onStart
 	4. ~~onResume~~ not called because partially visible
 	5. Device rotates
-	6. onStop
-	7. onSaveInstanceState
+	6. onSaveInstanceState
+	7. onStop
 	8. onDestroy
 	9. onCreate
 	10. onStart
@@ -418,9 +418,184 @@ onDestroy(3)|onDetach() // Called when fragment finally loses contact with the a
 3. CollaspingToolbarLayout 的子view需要提供 **layout_collapseMode** 属性，该属性有3个选项： 1. parallax 2. pin 3. none
 4. 同样因为一切的协调者都是由 CoordinatorLayout 负责的，所以必须有一个 NestedScrollView来包围要显示的主体内容
 
+### 13. RecyclerView
 
+
+#### 1. RecyclerView 使用的几个要素
+1. Adapter - The recycler view uses the adapter to display the data. It includes a layout manager to specify how the data should be positioned.
+	- Adapter has two main jobs:
+	- 1. Craete views
+	- 2. Bind each view to a piece of data
+	- Q: Why doesn't Android provide ready-made adapters for recycler views?
+	- A: Because recycler view adapters don't just specify the data that will appear. They also specify the views that will be used for each item in the collection. That means that recycl      er view adapters are both more powerful, and less general, than the list view adapters.
+2. LayoutManager - There are a number of built-in layout managers you can use that allow you to position items in a linear list or grid
+	- RecyclerViewe uses a layout manager to arrange its views
+3. `recyclerView.setAdapter(adapter)` // set adapter to recycler view
+
+#### 2. CardView
+1. In layout xml:
 	
+	```
+	<CardView
+		...
+		xmlns:card_view="http://schemas.android.com/apk/res-auto"
+		...
+		card_view:cardElevation="2dp" // 设定card view高度
+		card_view:cardCornerRadius="4dp" // 设定card view圆角
+	>
+	... // CardView can only have one direct child (similar to NestedScrollView!)
+	</CardView>
+	```
 
+2. CardView can only have one direct child.
+
+
+#### 3. Define the Adapter
+
+1. Define a class extends RecyclerView.Adapter
+2. Define a static inner class extends RecyclerView.ViewHolder
+3. Define RecyclerView.Adapter constructor to store the data of the RecyclerView
+4. Implement RecyclerView#getItemCount() method
+5. Define the adapter's view holder: the view holder is used to define what view or views the recycler view should use for each data item it's given
+	- CardView
+	- ViewHolder constructor, take the cardview as input param
+	- call super(v) in constructor
+6. Override onCreateViewHolder() method
+	- onCreateViewHolder method gets called when the recycler view requires a new view holder
+	- onCreateViewHolder takes two params: ViewGroup parent (the recylerview itself in fact) and int viewType
+	- onCreateViewHolder returns an instance of ViewHolder
+7. Override onBindViewHolder() method
+	- onBindViewHolder method gets called whenever the recycler view needs to display data in a view holder
+	- onBindViewHolder method takes two params: ViewHolder: the view holder the data needs to bound to, and int position: the position in the data set of the data that needs to be bound
+	- The recycler view calls onBindViewHolder when it wants to use (or reuse) a view holder for a new piece of data
+8. At last, adapter must be used with RecyclerView. Like: `recyclerView.setAdapter(adapter)`
+
+> #### Response to user click
+> 1. Unlike ListView extends AbsListView (extends AdapterView extends ViewGroup), RecyclerView extends ViewGroup
+> 2. So RecyclerView has no built-in method like `onItemClickedListener`
+> 3. We need to set up the click listener in Adapter like `cardView.setOnClickListener(new View.OnClickListener() { ... })`
+> 4. We can also introduce an interface in the adapter, then whenever the adapter being used, it can also call the setListener to set different click listener for different scenarios
+
+
+#### 4. Specify the layout manager
+
+1. LinearLayoutManager
+	- Its constructor takes one parameter, a Context
+	
+	```
+	LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
+	recyclerView.setLayoutManager(layoutManager);
+	```
+	
+2. GridLayoutManager
+	- Its constructor takes 2 params: one is Context, the other one is int value specifying the number of columns the grid should have
+	- Also you can change the grid orientation. To do this, you add two more params to the constructor, the orientation and whether you want the views to appear in reverse order 
+	
+	```
+	GridLayoutManager layoutManager = new GridLayoutManager(getActivity(), 2); // 2 means the grid layout has 2 columns
+	
+	// or
+	GridLayoutManager layoutManager = new GridLayoutManager(
+		getActivity(),
+		1, // Column size
+		GridLayoutManager.HORIZONTAL, // orientation
+		false // reverse or not, false means no reverse
+	);
+	
+	recyclerView.setLayoutManager(layoutManager);
+	```
+	
+3. Staggered grid layout manager
+	- Its constructor takes two params, an int value for the number of columns or rows, the other one is the orientation.
+	
+	```
+	StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(
+		2, // columns or rows
+		StaggeredGridLayoutManager.VERTICAL // orientation
+	);
+	recyclerView.setLayoutManager(layoutManager);
+	```
+	
+4. `recyclerView.setLayoutManager(layoutManager)`
+
+
+
+
+```
+class CaptionedImagesAdapter extends RecyclerView.Adapter<CaptionedImagesAdapter.ViewHolder> {
+	
+	public CaptionedImagesAdapter(object[] data) {
+		this.data = data;
+	}
+	
+	@Override
+	public int getItemCount() {
+		return this.data.length;
+	}
+	
+	@Override
+	public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+		CardView cv = LayoutInflator.from(parent.getContext())
+			.inflate(R.layout.card_captioned_image, // the layout of the view hodler
+			parent,
+			false);
+			
+		return new ViewHolder(cv);	
+	}
+	
+	@Override
+	public void onBindViewHolder(ViewHolder holder, int position) {
+		CardView cardView = holder.cardView;
+		ImageView imageView = (ImageView) cardView.findViewById(R.id.info_image);
+		Drawable drawable = ContextCompat.getDrawable(cardView.getContext(), imageIds[position]);
+		imageView.setImageDrawable(drawable);
+		imageView.setContentDescription(captions[position]);
+		TextView textView = cardView.findViewById(R.id.info_text);
+		textView.setText(captions[position]);
+		
+		// This is a hard coded click listener
+		cardView.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = xx;
+				startActivity(intent);
+			}
+		});
+		
+		cardView.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				if (listener != null) {
+					listener.onClick(position);
+				}
+			}
+		});
+	}
+	
+	Listener listener;
+	
+	interface Listener {
+		void onClick(int position);
+	}
+	
+	void setListener(Listener listener) {
+		this.listener = listener;
+	}
+	
+	public static class ViewHolder extends RecyclerView.ViewHolder {
+		// Define a ViewHolder as inner class
+		// ViewHolder is used to specify which views should be used for each data item
+		CardView cardView;
+		public ViewHolder(CardView view) {
+			super(view);
+			this.cardView = view;
+		}
+	}
+}
+```
+
+
+### 14. Navigation Drawers
 
 
 
