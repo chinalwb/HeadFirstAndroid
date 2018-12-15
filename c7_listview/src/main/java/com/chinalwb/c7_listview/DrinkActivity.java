@@ -1,11 +1,14 @@
 package com.chinalwb.c7_listview;
 
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.os.AsyncTask;
 import android.print.PrinterId;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.EdgeEffectCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,6 +17,8 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.lang.ref.WeakReference;
 
 public class DrinkActivity extends AppCompatActivity {
 
@@ -64,20 +69,21 @@ public class DrinkActivity extends AppCompatActivity {
     }
 
     private void updateFavorite(boolean isChecked) {
-        SQLiteOpenHelper sqLiteOpenHelper = new StarbuzzDatabaseHelper(this);
-        SQLiteDatabase db = sqLiteOpenHelper.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
-        contentValues.put(StarbuzzDatabaseHelper.TABLE_DRINK_COL_FAVORITE, isChecked ? 1 : 0);
-        int r = db.update(StarbuzzDatabaseHelper.TABLE_DRINK,
-                contentValues,
-                "_id = ?",
-                new String[] { Integer.toString(drinkId) }
-                );
-        if (r > 0) {
-            Toast.makeText(this, "Updated.", Toast.LENGTH_SHORT).show();
-        }
-
-        db.close();
+        new UpdateFavoriteTask(this, isChecked).execute(this.drinkId);
+//        SQLiteOpenHelper sqLiteOpenHelper = new StarbuzzDatabaseHelper(this);
+//        SQLiteDatabase db = sqLiteOpenHelper.getWritableDatabase();
+//        ContentValues contentValues = new ContentValues();
+//        contentValues.put(StarbuzzDatabaseHelper.TABLE_DRINK_COL_FAVORITE, isChecked ? 1 : 0);
+//        int r = db.update(StarbuzzDatabaseHelper.TABLE_DRINK,
+//                contentValues,
+//                "_id = ?",
+//                new String[] { Integer.toString(drinkId) }
+//                );
+//        if (r > 0) {
+//            Toast.makeText(this, "Updated.", Toast.LENGTH_SHORT).show();
+//        }
+//
+//        db.close();
     }
 
     private Drink loadDrinkById(int id) {
@@ -115,5 +121,76 @@ public class DrinkActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+    }
+
+
+    /**
+     *
+     */
+    private static class UpdateFavoriteTask extends AsyncTask<Integer, Void, Boolean> {
+
+        ContentValues contentValues;
+        SQLiteDatabase db;
+        WeakReference<Context> contextWeakReference;
+        boolean isChecked;
+        UpdateFavoriteTask(Context context, boolean isChecked) {
+            contextWeakReference = new WeakReference<>(context);
+            this.isChecked = isChecked;
+        }
+
+        private Context getContext() {
+            return this.contextWeakReference.get();
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            Context context = this.getContext();
+            if (context == null) {
+                return;
+            }
+
+            SQLiteOpenHelper sqLiteOpenHelper = new StarbuzzDatabaseHelper(context);
+            db = sqLiteOpenHelper.getWritableDatabase();
+            contentValues = new ContentValues();
+            contentValues.put(StarbuzzDatabaseHelper.TABLE_DRINK_COL_FAVORITE, isChecked ? 1 : 0);
+        }
+
+        @Override
+        protected Boolean doInBackground(Integer... params) {
+            if (params.length == 0) {
+                return false;
+            }
+            int id = params[0];
+            int r = db.update(
+                    StarbuzzDatabaseHelper.TABLE_DRINK,
+                    this.contentValues,
+                    "_id = ?",
+                    new String[] { Integer.toString(id) }
+            );
+            return r > 0;
+        }
+
+        @Override
+        protected void onProgressUpdate(Void... values) {
+            super.onProgressUpdate(values);
+        }
+
+        @Override
+        protected void onPostExecute(Boolean success) {
+            super.onPostExecute(success);
+            try {
+                Context context = this.getContext();
+                if (context == null) {
+                    return;
+                }
+
+                if (success) {
+                    Toast.makeText(context, "Updated!!", Toast.LENGTH_SHORT).show();
+                }
+            } finally {
+                db.close();
+            }
+        }
     }
 }

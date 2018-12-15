@@ -952,7 +952,43 @@ public void onDestroy() {
 
 * CursorAdapter#changeCursor(newCursor) // this will update the data CursorAdapter displaying
 
+#### AsyncTask
 
+```
+private class MyAsyncTask extends AsyncTask<Param, Progress, Result> {
+
+	protected void onPreExecute() {
+		// Gets called before doInBackground starts
+		// Be used to set up the task
+		// Called on main thread
+		// No input params
+		// void return type
+	}
+	
+	protected Result doInBackground(Params... params) {
+		// Run in background thread
+		// Takes input param
+		// And return Result type
+	}
+	
+	protected void onProgressUpdate(Progress... values) {
+		// Run on main thread
+		// Called if publishProgress() is issued in doInBackground()
+		// 
+	}
+	
+	protected void onPostExecute(Result result) {
+		// Run on main thread
+	} 	
+}
+```
+
+
+* Execute the AsyncTask
+
+```
+new MyAsyncTask().execute(Params..);
+```
 
 
 
