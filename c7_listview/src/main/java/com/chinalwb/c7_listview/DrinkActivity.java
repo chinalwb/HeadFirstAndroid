@@ -98,8 +98,7 @@ public class DrinkActivity extends AppCompatActivity {
                 null
         );
 
-        if (cursor != null) {
-            cursor.moveToFirst();
+        if (cursor != null && cursor.moveToFirst()) {
             String name = cursor.getString(0);
             String desc = cursor.getString(1);
             int imageId = cursor.getInt(2);

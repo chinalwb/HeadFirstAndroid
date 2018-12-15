@@ -917,7 +917,38 @@ public void onDestroy() {
 ### 17. Cursor update and AsyncTask
 
 
+* SQLiteOpenHelper
+	- onUpgrade - change DB_VERSION to 2, then onUpgrade method gets called
+	
+* db.update
+	- SQLiteOpenHelper#getWritableDatabase() -> returns a SQLiteDatabase instance
+	- SQLiteDatabase#update()
 
+	```
+	int updatedCount = db.update(
+		"tableName" // the table to upadte
+		contentValues // the ContentValue contains the columns needs to be updated
+		"xx = ?" // where
+		new String[] { .. } // where valeus
+	)
+	```
+
+* Filtering the records
+	- get a readable database
+	- db.query(..)
+	
+	```
+	SQLiteDatabase db = SQLiteOpenHelper.getReadableDatabase();
+	db.query(
+		"tableName" // The table to query
+		new String[] {..} // The columns to return in the cursor
+		"xx = ?" // where
+		new String[] { .. } // where values
+		group by
+		having by
+		order by
+	)
+	```
 
 
 

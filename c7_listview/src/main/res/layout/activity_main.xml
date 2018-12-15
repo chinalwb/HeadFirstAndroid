@@ -20,13 +20,32 @@
     <ListView
         android:id="@+id/list_options"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/starbucks"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_margin="16dp"
         android:entries="@array/options"
         />
 
+    <TextView
+        android:id="@+id/favorite_drinks_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_options"
+        android:layout_margin="16dp"
+        android:text="Your favorite drinks"
+        />
+
+    <ListView
+        android:id="@+id/favorite_drinks_list"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favorite_drinks_text"
+        android:layout_margin="16dp"
+        />
 </android.support.constraint.ConstraintLayout>
