@@ -50,15 +50,7 @@ public class MainActivity extends AppCompatActivity {
         mFavoriteList = findViewById(R.id.favorite_drinks_list);
         SQLiteOpenHelper sqLiteOpenHelper = new StarbuzzDatabaseHelper(this);
         db = sqLiteOpenHelper.getReadableDatabase();
-        cursor = db.query(
-                StarbuzzDatabaseHelper.TABLE_DRINK,
-                new String[] { "_id", StarbuzzDatabaseHelper.TABLE_DRINK_COL_NAME },
-                StarbuzzDatabaseHelper.TABLE_DRINK_COL_FAVORITE + "= ?",
-                new String[] { "1" },
-                null,
-                null,
-                StarbuzzDatabaseHelper.TABLE_DRINK_COL_NAME + " ASC"
-        );
+        cursor = queryForFavoriteDrinks();
         final CursorAdapter cursorAdapter = new SimpleCursorAdapter(
                 this,
                 android.R.layout.simple_list_item_1,
@@ -78,6 +70,27 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    private Cursor queryForFavoriteDrinks() {
+         return db.query(
+                StarbuzzDatabaseHelper.TABLE_DRINK,
+                new String[] { "_id", StarbuzzDatabaseHelper.TABLE_DRINK_COL_NAME },
+                StarbuzzDatabaseHelper.TABLE_DRINK_COL_FAVORITE + "= ?",
+                new String[] { "1" },
+                null,
+                null,
+                StarbuzzDatabaseHelper.TABLE_DRINK_COL_NAME + " ASC"
+        );
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+
+        cursor = queryForFavoriteDrinks();
+        CursorAdapter adapter = (CursorAdapter) mFavoriteList.getAdapter();
+        adapter.changeCursor(cursor);
     }
 
     @Override

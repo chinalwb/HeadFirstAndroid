@@ -950,6 +950,8 @@ public void onDestroy() {
 	)
 	```
 
+* CursorAdapter#changeCursor(newCursor) // this will update the data CursorAdapter displaying
+
 
 
 
