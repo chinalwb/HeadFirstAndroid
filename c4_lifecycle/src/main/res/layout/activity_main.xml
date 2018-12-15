@@ -69,6 +69,7 @@
         android:textSize="24dp"
         android:text="2ND Activity"
         android:onClick="start2nd"
+        android:visibility="gone"
         />
 
 </android.support.constraint.ConstraintLayout>

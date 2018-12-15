@@ -670,3 +670,269 @@ class CaptionedImagesAdapter extends RecyclerView.Adapter<CaptionedImagesAdapter
 		}
 	}
 	```
+	
+
+### 15. SQLite
+
+* Why SQLite on Android?
+	1. It's lightweight. A SQLite database is just a file.
+	2. It's optmized for a single user
+	3. It's stable and fast. Transaction supported
+
+* Where is the database stored?
+	- /data/data/<YOUR_PACKAGE_ID>/databases
+
+* Every database consists of two files
+	1. Database file
+	2. Journal file
+
+* Built-in SQLite classes in Android
+	1. The SQLite Helper - enables you to create and manage databases. You create one by extending the SQLiteOpenHelper class
+	2. The SQLite Database - The SQLiteDatabase class gives you access to the database. It's like a SQLConnection in JDBC
+	3. Curosr - A cursor lets you read from and write to the database. It's like a ResultSet in JDBC.
+
+	
+* Q: SQLite database has no username and password on the database, how is it kept secure?
+	- The directory /data/data/<PACKAGE_ID>/databases is only readable by the app itself. The database is secured down at the operating system level.
+
+* Create the SQLite helper
+	- extends SQLiteOpenHelper
+	- Override onCreate - onCreate() gets called when the database first gets created on the device. Create tables in this method.
+	- Override onUpgrade - onUpgrade() gets called when the database needs to be upgraded.
+
+* Specify the database
+	- we need to give the database a name. Without a name, the database will disappear oncethe atabase is closed
+	- we ned to provide the version of the database. The version needs to be an integer value starting at 1. SQLite helper uses this version number to determine whether the database needs to be upgraded (or created).
+
+* Android: It's a convention to call your primary key columns _id. Android expects there to be an `_id` column on your data.
+
+* onCreate(SQLiteDatabase db) - This method called when the database is created
+	- db.execSQL(sqlStringHere); - Use `SQLiteDatabase.execSQL(String sql)` to exec sql
+	- db.insert("database", null, drinkValues)
+	- `drinkValues` is `ContentValues`.
+	- contentValues.put('columnName', value) - save the data being inserted into contentValues first
+	- The user installs the app and launches it. When the app needds to access the database, hte SQLite helper checks to see if the database already exists.
+	- If the database doesn't exist, it gets created, by the db name and db version you provided in the constructor of SQLiteOpenHelper.
+	- When the database is created, the onCreate() method in the SQLiteOpenHelper is called -- create tables and insert initial data here.
+
+* When you need to change an app's database, there are two key scenarios you have to deal with.
+	- One is that is the first time user installs the app on the device. For this case, onCreate() method gets called.
+	- The other one is user has already installed the app, and he is trying to installs a new version of your app that includes a different version of the database. SQLiteOpenHelper will call either the onUpgrade() or onDowngrade() method.
+	- If the DB_VERSION you specified in the SQLiteOpenHelper constructor is higher than that of the database, it calls `SQLiteOpenHelper onUpgrade()` or else if the DB_VERSION is lower than that of the database, it calls `onDowngrade()` method.
+
+* onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
+
+* onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion)
+
+* Update the table record
+	
+	```
+	ContentValues drinkValues = new ContentValues();
+	drinkValues.put("DESCRIPTION", "Tasty");
+	db.update("TABLE_NAME", // The table to update
+		drinkValues,  // NEW RECORD TO CHANGE
+		"NAME = ? OR DESCRIPTION = ?", // WHERE
+		new String[] { "Latte", "Our best drip coffee" } // WHERE clause values
+		)
+	```
+
+* Delete the table record
+
+	```
+	db.delete(
+		"DRINK",
+		"NAME = ?",
+		new String[] { "Latte" }
+	);
+	```
+	
+* Add new columns to table use SQL
+	
+	```
+	ALTER TABLE DRINK
+	ADD COLUMN FAVORITE NUMBERIC
+	```
+
+* Rename table
+	
+	```
+	ALTER TABLE DRINK
+	RENAME TO FOO
+	```
+
+* Delete tables by dropping them
+
+	```
+	DROP TABLE DRINK
+	```
+
+
+```
+CREATE TABLE DRINK (_id INTEGER PRIMARY KEY AUTOINCREAMENT,
+	NAME TEXT,
+	DESCRIPTION TEXT,
+	IMAGE_RESOURCE_ID INTEGER)
+```
+
+```
+public class StarbuzzDatabaseHelper extends SQLiteOpenHelper {
+	
+	private static final String DB_NAME = "x";
+	private static final int DB_VERSION = 1;
+	
+	StarbuzzDatabaseHelper(Context context) {
+		super(context, DB_NAME, null, DB_VERSION);
+	}
+	
+	@Override
+	public void onCreate(SQLiteDatabase db) {
+		updateMyDatabase(db, 0, DB_VERSION);
+	}
+	
+	@Override
+	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+		updateMyDatabase(db, oldVersion, newVersion);
+	}
+	
+	private void updateMyDatabase(SQLiteDatabase db, int oldVersion, int newVersion) {
+		if (oldVersion < 1) {
+			// First time install
+		}
+		if (oldVersion < 2) {
+			// This code will only run for user updates the app so 
+			// SQLite will call onUpgrade with the oldVersion = 1
+		}
+	}
+}
+```
+
+### 16. SQLite Cursor
+
+* SQLiteOpenHelper
+
+```
+class StarbuzzDatabaseHelper extends SQLiteOpenHelper {
+	StarbuzzDatabaseHelper(Context context) {
+		super(context, DB_NAME, null, DB_VERSION);
+	}	
+}
+```
+
+```
+StartbuzzDatabaseHelper helper = new StarbuzzDatabaseHelper(this); // this could be Activity
+SQLiteDatabase db = helper.getReadableDatabase();
+```
+
+* Get a SQLiteDatabase instance
+
+	- getReadableDatabase() // Readonly to the database 
+```
+helper.getReadableDatabase();
+```
+
+	- getWritableDatabase() // use getWritableDatabase if needs to write data into database
+
+* Cursor cursor = db.query(..)
+
+```
+Cursor cursor = db.query(
+	"tableName",
+	new String[] {"_id", "NAME", "DESC"}, // The columns to return in cursor
+	null, // WHERE
+	null, // WHERE VALUES
+	null, 
+	null, 
+	null // SORT BY 
+	// set null for these 5 params
+);
+```
+
+* Cursor - SORT BY - by default returns records in _id asc order
+	- set the last param as "NAME ASC" to sort by NAME ASC
+	- the last param can also sort by multiple columns like: `FAVORITE DESC, NAME` -- This will sort by favorite by descending and name ascending
+	
+* Cursor - WHERE - filtering the records you want to return
+	
+```
+Cursor cursor = db.query(
+	"tableName",
+	new String[] {"_id", "NAME", "DESC"}, // The columns to return in cursor
+	"NAME = ?", // WHERE
+	new String[] {"Latte"}, // WHERE values
+	null,
+	null,
+	"NAME ASC"
+ );
+```
+	-
+	- The value of condications must be an array of Strings, even if the column contains some other type of data 
+
+```
+Cursor cursor = db.query(
+	"tableName",
+	new String[] {"colA", "colB", "colC"}, // columns to return
+	"_id = ?",  // where
+	new String[] {Integer.toString(1)}, // where values
+	null,
+	null,
+	"NAME ASC" // Sort by
+);
+```
+
+* Navigate cursor
+	- cursor.moveToFirst
+	- cursor.moveToLast
+	- cursor.moveToPrevious
+	- cursor.moveToNext
+	- cursor.getString(0) // Gets the first column value as string
+	- cursor.getInt(1) // Gets the 2nd column value as int
+
+* Use CursorAdapter to navigate cursor and map data to listview items
+
+```
+SimpleCursorAdapter adapter = new SimpleCursorAdapter(
+	Context context, // can be activity
+	int layout, // android.R.layout.simple_list_item_1
+	Cursor cursor, // Cursor returned by db.query(...)
+	String[] fromColumns, // The columns to take from the cursor
+	int[] toViews, // Display the value of the column to which view
+	int flags // the default value is 0. The alternative is to set it to FLAG_REGISTER_CONTENT_OBSERVER to register a content observer that will be notified when content changes.
+);
+```
+
+* Close the cursor and database when activity is destroyed.
+
+```
+public void onDestroy() {
+	super.onDestroy();
+	cursor.close();
+	db.close();
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

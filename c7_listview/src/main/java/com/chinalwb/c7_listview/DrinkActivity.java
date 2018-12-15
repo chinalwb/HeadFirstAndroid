@@ -1,5 +1,6 @@
 package com.chinalwb.c7_listview;
 
+import android.support.v4.widget.EdgeEffectCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -8,6 +9,8 @@ import android.widget.TextView;
 public class DrinkActivity extends AppCompatActivity {
 
     public static final String EXTRA_DRINKID = "drinkId";
+    public static final String EXTRA_DRINK = "drink";
+
 
     private ImageView mPhoto;
     private TextView mName;
@@ -18,8 +21,14 @@ public class DrinkActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drink);
 
-        int drinkId = getIntent().getExtras().getInt(EXTRA_DRINKID);
-        Drink drink = Drink.drinks[drinkId];
+        Drink drink = null;
+        boolean hasDrinkId = getIntent().getExtras().containsKey(EXTRA_DRINKID);
+        if (hasDrinkId) {
+            int drinkId = getIntent().getExtras().getInt(EXTRA_DRINKID);
+            drink = Drink.drinks[drinkId];
+        } else {
+            drink = getIntent().getExtras().getParcelable(EXTRA_DRINK);
+        }
 
         init(drink);
     }
