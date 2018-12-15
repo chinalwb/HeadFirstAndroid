@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/HeadFirstAndroid.iml" filepath="$PROJECT_DIR$/HeadFirstAndroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/c14_navigation_drawer/c14_navigation_drawer.iml" filepath="$PROJECT_DIR$/c14_navigation_drawer/c14_navigation_drawer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/c18_started_service/c18_started_service.iml" filepath="$PROJECT_DIR$/c18_started_service/c18_started_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/c4_lifecycle/c4_lifecycle.iml" filepath="$PROJECT_DIR$/c4_lifecycle/c4_lifecycle.iml" />
       <module fileurl="file://$PROJECT_DIR$/c5_view_and_viewgroups/c5_view_and_viewgroups.iml" filepath="$PROJECT_DIR$/c5_view_and_viewgroups/c5_view_and_viewgroups.iml" />
       <module fileurl="file://$PROJECT_DIR$/c7_listview/c7_listview.iml" filepath="$PROJECT_DIR$/c7_listview/c7_listview.iml" />

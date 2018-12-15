@@ -991,13 +991,59 @@ new MyAsyncTask().execute(Params..);
 ```
 
 
+### 17. Started Service
+
+* Android built-in services include:
+	- notification service
+	- location service
+	- alarm service
+	- download service
+
+	
+* There are 3 types of services:
+	1. Started Service
+		- A started service can run in the background indefinitely. (可以一直运行)
+		- Even if the activity that started it is destroyed. (即便是启动这个service的Activity已经销毁了，started service也可以继续运行)
+		- If you want to download a large file, you would probably use a started service.(大文件下载可以用 started service 来实现)
+	2. Bound Service
+		- A bound service is bound to another application component such as an activity. (Bound Service是用来绑定到其他APP的组件，比如绑定到另外一个APP的Activity)
+		- The activity can interact with the bound service, send requests, and gets results.(绑定这个service的Activity可以向 bound service 发送请求然后得到结果)
+		- When the components are no longer bound, the service is destroyed. (当所有绑定这个service 的组件都解除了对他的绑定，那么bound service就会销毁)
+		- If you want to create an odometer to measure the distance traveled by a vehicle, you'd probably use a bound service. In this way, any activities bound to the service could keep asking the service for updates on the distance traveled.(如果你想做一个里程表来记录车辆行驶的距离，就可以用 bound service 来实现，任意一个绑定到这个service 的Activity都可以调用bound service的接口来得到已经行驶的距离)
+	3. Scheduled Service
+		- A scheduled service is one that's scheduled to run at a particular time. From API 21, you can schedule jobs to run at an appropriate time. (Scheduled service可以指定代码在某个具体时间来执行)
+
+		
+* Started Service && IntentService
+	- 可以 extends IntentService 来实现一个 Started Service
+	- override IntentService 里面的 onHandleIntent(Intent intent) 方法
+	- 在IntentService内部的 onCreate 方法中，创建并启动了一个 HandlerThread.
+	- 并用新创建的 handlerThread.getLooper 作为构造方法的参数创建了一个 ServiceHandler。
+	- 在ServiceHandler extends Handler 的内部 Override 了Handler的 handleMessage 方法
+	- handleMessage方法中调用了自己的抽象方法 onHandleIntent(Intent) 方法
+	- handleMessage方法传入的是 (Intent) message.obj 
+	- message是在 Intent#onStart(Intent, int startId) 方法中创建出来的：
+	
+	```
+	public void onStart(Intent intent, int startId) {
+		Message message = Message.obtain();
+		message.obj = intent;
+		message.arg1 = startedId;
+		mServiceHandler.sendMessage(message);
+	}
+	```
 
 
+* Service
+	- Lifecycles
+	- onCreate
+	- onStartCommand
+	- onDestroy
 
-
-
-
-
+	- Started Service # onStartCommand 方法的返回值
+	- `START_STICKY` - System will try to recreate the service. With a null intent sent to onStart (Music playback?)
+	- `START_NON_STICKY` - System will not try to recreate the service
+	- `START_REDELIVER_INTENT` - System will recreate the service and redeliver the original intent to the Service. This makes sense if there is work to do and confirm if it is completed.
 
 
 
