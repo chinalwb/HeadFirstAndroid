@@ -13,6 +13,10 @@
 * [Support Library Packages](https://developer.android.com/topic/libraries/support-library/packages)
 
 
+### Questions
+1. [Parcelable V.S. Serializable](https://android.jlelse.eu/parcelable-vs-serializable-6a2556d51538)
+2. 
+
 ### 2. Most apps need to repond to the user in some way
 
 1.
@@ -909,6 +913,10 @@ public void onDestroy() {
 	db.close();
 }
 ```
+
+### 17. Cursor update and AsyncTask
+
+
 
 
 

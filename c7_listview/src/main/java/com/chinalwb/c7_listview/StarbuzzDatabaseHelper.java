@@ -10,9 +10,10 @@ public class StarbuzzDatabaseHelper extends SQLiteOpenHelper {
     public static final String TABLE_DRINK_COL_IMAGE_RESOURCE_ID = "IMAGE_RESOURCE_ID";
     public static final String TABLE_DRINK_COL_DESCRIPTION = "DESCRIPTION";
     public static final String TABLE_DRINK_COL_NAME = "NAME";
+    public static final String TABLE_DRINK_COL_FAVORITE = "FAVORITE";
 
     private static final String DB_NAME = "starbuzz";
-    private static final int DB_VERSION = 1;
+    private static final int DB_VERSION = 2;
 
     public StarbuzzDatabaseHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
@@ -40,6 +41,20 @@ public class StarbuzzDatabaseHelper extends SQLiteOpenHelper {
                     R.drawable.cappuccino);
             insertDrink(db, "Filter", "Our best drip coffee", R.drawable.filter);
         }
+        if (oldVersion < 2) {
+            String addFavoriteColumnSQL = getAddFavoriteColumnSQL();
+            db.execSQL(addFavoriteColumnSQL);
+        }
+    }
+
+    private static String getAddFavoriteColumnSQL() {
+        StringBuilder sql = new StringBuilder();
+        sql.append("ALTER TABLE ");
+        sql.append(TABLE_DRINK);
+        sql.append(" ADD COLUMN ");
+        sql.append(TABLE_DRINK_COL_FAVORITE);
+        sql.append(" INTEGER;");
+        return sql.toString();
     }
 
     private static void insertDrink(SQLiteDatabase db,

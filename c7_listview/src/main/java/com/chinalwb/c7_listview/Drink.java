@@ -8,6 +8,7 @@ public class Drink implements Parcelable {
     private String name;
     private String description;
     private int imageResourceId;
+    private int favorite;
 
     //drinks is an array of Drinks
     public static final Drink[] drinks = {
@@ -20,12 +21,18 @@ public class Drink implements Parcelable {
         this.name = in.readString();
         this.description = in.readString();
         this.imageResourceId = in.readInt();
+        this.favorite = in.readInt();
     }
 
     public Drink(String name, String description, int imageResourceId) {
+        this(name, description, imageResourceId, 0);
+    }
+
+    public Drink(String name, String description, int imageResourceId, int favorite) {
         this.name = name;
         this.description = description;
         this.imageResourceId = imageResourceId;
+        this.favorite = favorite;
     }
 
     public String getName() {
@@ -38,6 +45,10 @@ public class Drink implements Parcelable {
 
     public int getImageResourceId() {
         return imageResourceId;
+    }
+
+    public int getFavorite() {
+        return this.favorite;
     }
 
     @Override
@@ -68,5 +79,6 @@ public class Drink implements Parcelable {
         dest.writeString(this.name);
         dest.writeString(this.description);
         dest.writeInt(this.imageResourceId);
+        dest.writeInt(this.favorite);
     }
 }

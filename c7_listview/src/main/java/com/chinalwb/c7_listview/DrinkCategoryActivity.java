@@ -92,13 +92,9 @@ public class DrinkCategoryActivity extends AppCompatActivity {
 //                startActivity(intent);
 
                 Cursor cursor = (Cursor) cursorAdapter.getItem(position);
-                String name = cursor.getString(1);
-                String desc = cursor.getString(2);
-                int imageResourceId = cursor.getInt(3);
-                Drink drink = new Drink(name, desc, imageResourceId);
-
+                int drinkId = cursor.getInt(0);
                 Intent intent = new Intent(DrinkCategoryActivity.this, DrinkActivity.class);
-                intent.putExtra(DrinkActivity.EXTRA_DRINK, drink);
+                intent.putExtra(DrinkActivity.EXTRA_DRINKID, drinkId);
                 startActivity(intent);
             }
         };
