@@ -1047,10 +1047,50 @@ new MyAsyncTask().execute(Params..);
 
 
 
+* Notification Service
+	- NotificationManager = getSystemService(Context.NOTIFICATION_SERVICE);
+	- NotificationCompat.Builder
+	- NotificationChannel
+
+	- targetSDK >= Android 8 (26) 之后，要显示通知必须应用NotificationChannel
+
+```
+NotificationChannel = new NotificationChannel(
+	id, // String 
+	name, // String 
+	importance, // int NotificationManager.IMPORTANCE_HIGH  --- A head-up notification
+);
+```
+
+```
+// >=26
+if (Android.VERSION.SDK_INT >= Android.VERSION_CODES.O) {
+	NotificationCompat.Builder = new NotificationCompat.Builder(Context, channelId);
+} else {
+	NotificationCompat.Builder = new NotificationCompat.Builder(context);
+}
+
+buider.setSmallIcon(int)
+	.setContentTitle(title)
+	.setContentText(content)
+	.setPriority(int)
+	.setVibrate(new long[]{0, 1000})
+	.setAutoCancel()
+	.setContentIntent(pendingIntent);
+;
+
+Intent intent = new Intent(this, MusicServivce.class);
+intent.putExtra("xxx", R.raw.meet);
+PendingIntent pendingIntent = PendingIntent.getService(
+	context,
+	requestCode,
+	intent,
+	PendingIntent.FALG_UPDATE_CURRENT // FLAG
+);
+```
 
 
-
-
+### 19. Bound Service
 
 
 

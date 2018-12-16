@@ -6,8 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="XX" />
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
     <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
   </component>
@@ -19,18 +18,11 @@
   <component name="ChangeListManager">
     <list default="true" id="b00fa509-2e44-4a88-be4a-0b0218c39a3f" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c14_navigation_drawer/c14_navigation_drawer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/c14_navigation_drawer/c14_navigation_drawer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c4_lifecycle/c4_lifecycle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/c4_lifecycle/c4_lifecycle.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c5_view_and_viewgroups/c5_view_and_viewgroups.iml" beforeDir="false" afterPath="$PROJECT_DIR$/c5_view_and_viewgroups/c5_view_and_viewgroups.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/c7_listview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview/c7_listview.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/c8_toolbar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar/c8_toolbar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c9_fragment/c9_fragment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/c9_fragment/c9_fragment.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c18_started_service/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/c18_started_service/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c18_started_service/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c18_started_service/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,23 +45,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Service.java" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/app/Service.java">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="497" column="79" selection-start-line="497" selection-start-column="79" selection-end-line="497" selection-end-column="79" />
+            <state relative-caret-position="31">
+              <caret line="74" column="37" lean-forward="true" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
+              <folding>
+                <element signature="e#1524#1664#0" expanded="true" />
+                <element signature="e#1663#1664#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MusicService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/MusicService.java">
+      <file leaf-file-name="NotificationManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/app/NotificationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="22" selection-start-line="22" selection-end-line="25" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="314">
+              <caret line="527" column="41" selection-start-line="527" selection-start-column="16" selection-end-line="527" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NotificationChannel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/app/NotificationChannel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2646">
+              <caret line="168" column="11" selection-start-line="168" selection-start-column="11" selection-end-line="168" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -86,15 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/MainActivity.java">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/c18_started_service/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="38" selection-end-column="37" />
-              <folding>
-                <element signature="e#1103#1415#0" expanded="true" />
-                <element signature="e#1414#1415#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="207">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -102,20 +100,8 @@
       <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/c18_started_service/src/main/res/layout/activity_main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+            <state relative-caret-position="525">
+              <caret line="31" column="37" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="37" />
             </state>
           </provider>
           <provider editor-type-id="android-designer2">
@@ -9572,7 +9558,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/tool_bar.xml" />
         <option value="$PROJECT_DIR$/c8_toolbar/src/main/res/menu/menu_main.xml" />
         <option value="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/PastaFragment.java" />
         <option value="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/StoresFragment.java" />
@@ -9619,17 +9604,18 @@
         <option value="$PROJECT_DIR$/c7_listview/src/main/java/com/chinalwb/c7_listview/MainActivity.java" />
         <option value="$PROJECT_DIR$/c7_listview/src/main/java/com/chinalwb/c7_listview/DrinkActivity.java" />
         <option value="$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/LogService.java" />
-        <option value="$PROJECT_DIR$/c18_started_service/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/c18_started_service/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/MusicService.java" />
+        <option value="$PROJECT_DIR$/c18_started_service/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/c18_started_service/build.gradle" />
         <option value="$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/MainActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="864" />
+    <option name="x" value="970" />
     <option name="y" value="24" />
-    <option name="width" value="1184" />
+    <option name="width" value="1078" />
     <option name="height" value="1089" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -9645,47 +9631,19 @@
           <expand>
             <path>
               <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
               <item name="c4_lifecycle" type="feadf853:AndroidModuleNode" />
             </path>
             <path>
               <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="c18_started_service" type="feadf853:AndroidModuleNode" />
+              <item name="c14_navigation_drawer" type="feadf853:AndroidModuleNode" />
             </path>
             <path>
               <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
               <item name="c18_started_service" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
               <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="c18_started_service" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="c18_started_service" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="c18_started_service" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
@@ -9701,8 +9659,8 @@
     <property name="DEBUGGABLE_PROCESS" value="com.chinalwb.c9_fragment" />
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/wliu/Documents/Android/github/HeadFirstAndroid/c18_started_service/src/main/java/com/chinalwb/c18_started_service/LogService.java&#10;Cursor&#9;PSI&#9;JAVA://android.database.Cursor&#10;Handler.java&#9;FILE&#9;file:///Users/wliu/Library/Android/sdk/sources/android-28/android/os/Handler.java&#10;string&#9;FILE&#9;file:///Users/wliu/Documents/Android/github/HeadFirstAndroid/c14_navigation_drawer/src/main/res/values/strings.xml&#10;Fragment.java&#9;FILE&#9;file:///Users/wliu/Library/Android/sdk/sources/android-28/android/app/Fragment.java&#10;WorkoutD&#9;FILE&#9;file:///Users/wliu/Documents/Android/GitHub/HeadFirstAndroid/c9_fragment/src/main/java/com/chinalwb/c9_fragment/WorkoutDetailFragment.java&#10;DetailFragment&#9;FILE&#9;file:///Users/wliu/Library/Android/sdk/sources/android-28/androidx/leanback/app/DetailsFragment.java" />
-    <property name="android.project.structure.last.selected" value="c14_navigation_drawer" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;jar:///Users/wliu/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7a6756eeb958c0833fa847d5bfe68511/jars/classes.jar!/android/support/v4/app/NotificationCompat.class&#10;Cursor&#9;PSI&#9;JAVA://android.database.Cursor&#10;Handler.java&#9;FILE&#9;file:///Users/wliu/Library/Android/sdk/sources/android-28/android/os/Handler.java&#10;string&#9;FILE&#9;file:///Users/wliu/Documents/Android/github/HeadFirstAndroid/c14_navigation_drawer/src/main/res/values/strings.xml&#10;Fragment.java&#9;FILE&#9;file:///Users/wliu/Library/Android/sdk/sources/android-28/android/app/Fragment.java&#10;WorkoutD&#9;FILE&#9;file:///Users/wliu/Documents/Android/GitHub/HeadFirstAndroid/c9_fragment/src/main/java/com/chinalwb/c9_fragment/WorkoutDetailFragment.java&#10;DetailFragment&#9;FILE&#9;file:///Users/wliu/Library/Android/sdk/sources/android-28/androidx/leanback/app/DetailsFragment.java" />
+    <property name="android.project.structure.last.selected" value="c18_started_service" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="device.picker.selection" value="Nexus_5X_API_26" />
@@ -10244,7 +10202,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="864" y="24" width="1184" height="1089" extended-state="0" />
+    <frame x="970" y="24" width="1078" height="1089" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="7" />
@@ -10258,11 +10216,11 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.23632611" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Logcat" order="7" visible="true" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="7" visible="true" weight="0.32920536" />
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18038529" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1988417" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.24045408" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -10317,53 +10275,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/c14_navigation_drawer/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="33" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c14_navigation_drawer/src/main/java/com/chinalwb/c14_navigation_drawer/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c14_navigation_drawer/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="42" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c14_navigation_drawer/src/main/res/layout/activity_help.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" selection-start-line="1" selection-end-line="17" selection-end-column="15" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c14_navigation_drawer/src/main/res/layout/toolbar_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/c14_navigation_drawer/src/main/java/com/chinalwb/c14_navigation_drawer/HelpActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -10720,13 +10631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/app/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="497" column="79" selection-start-line="497" selection-start-column="79" selection-end-line="497" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -10737,10 +10641,41 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/MusicService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" selection-start-line="22" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/app/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="497" column="79" selection-start-line="497" selection-start-column="79" selection-end-line="497" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7a6756eeb958c0833fa847d5bfe68511/jars/classes.jar!/android/support/v4/app/NotificationCompat.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="2452" column="63" lean-forward="true" selection-start-line="2452" selection-start-column="63" selection-end-line="2452" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/app/PendingIntent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="602" column="32" selection-start-line="602" selection-start-column="32" selection-end-line="602" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/c18_started_service/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        <state relative-caret-position="525">
+          <caret line="31" column="37" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="37" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -10757,23 +10692,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/MusicService.java">
+    <entry file="file://$PROJECT_DIR$/c18_started_service/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" selection-start-line="22" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="207">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/app/NotificationChannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2646">
+          <caret line="168" column="11" selection-start-line="168" selection-start-column="11" selection-end-line="168" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/app/NotificationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="527" column="41" selection-start-line="527" selection-start-column="16" selection-end-line="527" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="38" selection-end-column="37" />
+        <state relative-caret-position="31">
+          <caret line="74" column="37" lean-forward="true" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
           <folding>
-            <element signature="e#1103#1415#0" expanded="true" />
-            <element signature="e#1414#1415#0" expanded="true" />
+            <element signature="e#1524#1664#0" expanded="true" />
+            <element signature="e#1663#1664#0" expanded="true" />
           </folding>
         </state>
       </provider>
