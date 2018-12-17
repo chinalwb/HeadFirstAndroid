@@ -1092,6 +1092,229 @@ PendingIntent pendingIntent = PendingIntent.getService(
 
 ### 19. Bound Service
 
+* Bound Service needs to override `onBind`
+
+```
+public class OdometerService extends Service {
+	
+	private final IBinder binder = new OdometerBinder();
+	private final Random random = new Random();
+	
+	@Override
+	public IBinder onBind(Intent intent) {
+		return this.binder;	
+	}
+	
+	public class OdometerBinder extends Binder {
+		OdometerService getOdometer() {
+			return OdometerService.this;
+		}
+	}
+	
+	public double getDistance() {
+		return random.nextDouble();
+	}
+}
+```
+
+* ServiceConnection - a ServiceConnection is an interface that enables your activity to bind to a service.
+	- onServiceConnected(ComponentName componentName, IBinder binder) - runs when the service is connected
+		- ComponentName identifies the service. It includes the service package and class names
+		- IBinder defined by the service. OdometerBInder.
+	- onServiceDisconnected() - runs when the service is disconncted
+
+* bindService() to bind the service
+	- onStart() - This is appropriate if you only need to interact with the service when it's visible
+	- onCreate() - Do this if you need to receive updates from the service even when the activity's stopped.??
+
+```
+protected void onStart() {
+	super.onStart();
+	Intent intent = new Intent(this, OdometerService.class);
+	bindService(intent, connection, Context.BIND_AUTO_CREATE);
+}
+```
+
+* unbindService() to unbind from the service
+	- If bindService in onStart, then unbindService() in onStop
+	- If bindService in onCreate, then unbindService() in onDestroy
+
+
+#### Bound Service 重点使用步骤
+1. 定义一个class extends Service
+2. override里面的 onBind方法 `public IBinder onBind(Intent intent)` 返回一个IBinder对象
+3. 定义一个class extends Binder `public class xxBinder extends Binder` 并定义一个方法，返回 Bound Service 实例
+4. 在Bound Service类中定义需要的方法 供调用者来访问
+5. 在Activity中的 onCreate 或 onStart 方法中，调用 bindService(Intent, ServiceConnection, Context.BIND_AUTO_CREATE) 方法
+6. Intent - 是一个explicit intent，指定要绑定的 service 的class
+7. ServiceConnection - 是定义的一个匿名类， 
+
+```
+private ServiceConnection = new ServiceConnection() {
+	public void onServiceConnected(ComponentName componentName, IBinder binder) {
+		// 这个方法是一个回调, 当Activity绑定到Service的时候被调用
+		// ComponentName 包含了 package name 和 class name, 也就是 Service 对象
+		// Binder 就是Service类中的继承于 Binder 的子类
+	}
+	
+	public void onServiceDisconnected(ComponentName componentName) {
+		// 这也是回调方法，当Activity和service解除绑定的时候被调用
+	}
+}
+```
+8. 调用 Service 中 IBinder 对象的方法来得到service的对象实例，然后调用这个service的方法来得到想要的内容
+9. Activity的onStop方法中或者onDestroy中调用 unbindService(connection) 方法
+
+
+* Bound Service 生命周期
+	1. The component calls `bindService()` and the service gets created
+	2. onCreate() - service initialization
+	3. onBind(Intent) - returns IBinder, from which the caller can get an instanceof the service
+	4. onUnbind() - runs when all components have unbound from the service
+	5. onDestroy() - called when no component are bound to the service and it's about to be destroyed
+	6. After the onDestroy() has run, the service is destroyed
+
+	
+* Runtime permission request
+	- Permission -- `<users-permission android:name="android.permission.ACCESS_FINE_LOCATION" />`
+	- Runtime SDK version >= 23, then request permission at runtime
+	- Runtime SDK version <= 22, then request permission when it's installed
+
+
+* LocationListener
+	- onLocationChanged(Location location) // location parameter describes the current location.
+	- onProviderDisabled
+	- onProviderEnabled
+	- onStatusChanged
+
+* LocationManager
+	- get access to Android's Location Service
+	- specify a location provider
+	- requests location provider to send location updates to the location listener
+	
+	- `getBestProvider(new Criteria(), true)`
+	- 
+* LocationProvider
+	- Send location updates to location listener
+	- Two main options:
+	- 1. GPS: use GPS sensor
+	- 2. Network: use Wi-Fi, Bluetooth, or mobile networks
+
+* request location updates
+	
+	```
+	locationManager.requestLocationUpdates(
+		provider, // location provider string
+		1000, // minimum time interval between updates in milliseconds
+		1, // the minimum distance between updates in meters
+		listener // the location listener
+	)
+	```
+	
+* Before request location updates, you need to request permission at runtime for SDK version >= 23
+	- Use `ContextCompat.checkSelfPermission(Context, android.Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED`
+	
+```
+	LocationManager locationManager = (LocationManager) getSystemService (Context.LOCATION_SERVICE);
+	if (ContextCompat.checkSelfPermission(this, PERMISSION_STRING) == PackageManager.PERMISSION_GRANTED) {
+		String provider = locationManager.getBestProvider(new Criteria(), true);
+		if (provider != null) {
+			locationManager.requestLocationUpdates(
+				provider,
+				1000,
+				1,
+				listener
+			);
+		}
+	} 
+
+```
+
+* LocationListener - calculate the distance traveled
+
+```
+	LocationListener locationListener = new LocationListener() {
+		public void onLocationChanged(Location location) {
+			if (lastLocation == null) {
+				lastLocation = location;
+			}
+			
+			distanceInMeters += location.distanceTo(lastLocation);
+			lastLocation = location;
+		}
+	}
+```
+
+
+* Stop the listener getting location updates `LocationManager.removeUpdates(LocationListener)`
+
+```
+	if (ContextCompat.checkSelfPermission(this, PERMISSION_STRING)
+		== PackageManager.PERMISSION_GRANTED) {
+		locationManager.removeUpdates(listener);
+	}
+```
+
+* requestPermissions V.S. checkSelfPermissions
+	- ActivityCompat.requestPermissions(Context, new String[] {权限列表}, requestCode) // 请求权限
+	- checkSelfPermissions - 检查权限是否已经被授权
+	
+	- `requestPermissions()` can only be called from an Activity, cannot request permissions from a service
+
+```
+	// 如果没有权限！则去请求一下！
+	if (ContextCompat.checkSelfPermissions(this, PERMISSION_STRING) != PackageManager.PERMISSION_GRANTED) {
+		ActivityCompat.requestPermissions(
+			this,
+			new String[] {请求权限列表},
+			requestCode
+		);
+	} else {
+		// 如果已经有了权限，则 bindService
+		Intent intent = new Intent(this, OdometerService.class);
+		bindService(intent, ServiceConnection, Context.BIND_AUTO_CREATE);
+	}
+```
+
+
+* Check the user's response to the permission request by overriding `onRequestPermissionsResult()`, there are 3 parameters:
+	- int request code
+	- String[] permissions
+	- int[] grant results
+
+
+```
+public void onRequestPermissionsResult(
+	int requestCode,
+	String[] requestPermissions,
+	int[] grantResults) {
+	
+	switch(requestCode) {
+		case PERMISSION_REQUEST_CODE:
+			if (grantResults.length > 0
+				&& grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+				// 用户已经授权
+				// 现在可以 bindService 了
+				Intent intent = new Intent(this, OdometerService.class);
+				bindService(intent, ServiceConnection, Context.BIND_AUTO_CREATE);
+			} else {
+				// 用户拒绝授权
+			}
+	}	
+}
+```
+
+
+
+
+
+
+
+
+	
+
+
+
 
 
 
