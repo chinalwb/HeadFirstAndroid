@@ -32,19 +32,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b00fa509-2e44-4a88-be4a-0b0218c39a3f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c14_navigation_drawer/c14_navigation_drawer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/c14_navigation_drawer/c14_navigation_drawer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c4_lifecycle/c4_lifecycle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/c4_lifecycle/c4_lifecycle.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c5_view_and_viewgroups/c5_view_and_viewgroups.iml" beforeDir="false" afterPath="$PROJECT_DIR$/c5_view_and_viewgroups/c5_view_and_viewgroups.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/c7_listview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview/c7_listview.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/c8_toolbar.iml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar/c8_toolbar.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c9_fragment/c9_fragment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/c9_fragment/c9_fragment.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c19_bound_service/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c19_bound_service/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/OdometerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/OdometerService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -66,39 +57,37 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="RemoteOdometerService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/RemoteOdometerService.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="OdometerService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/OdometerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+            <state relative-caret-position="530">
+              <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity2.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/MainActivity2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+            <state relative-caret-position="298">
+              <caret line="138" column="18" lean-forward="true" selection-start-line="138" selection-start-column="18" selection-end-line="138" selection-end-column="18" />
+              <folding>
+                <element signature="e#4374#4552#0" expanded="true" />
+                <element signature="e#4551#4552#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c19_bound_service/src/main/AndroidManifest.xml">
+        <entry file="file://$PROJECT_DIR$/c18_started_service/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="60">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
           <provider editor-type-id="android-manifest">
@@ -106,15 +95,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c19_bound_service_2/src/main/java/com/chinalwb/c19_bound_service/MainActivity.java">
+      <file leaf-file-name="Build.java" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/os/Build.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="4393">
+              <caret line="219" column="11" selection-start-line="219" selection-start-column="11" selection-end-line="219" selection-end-column="11" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/c19_bound_service/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+          <provider editor-type-id="android-manifest">
+            <state />
           </provider>
         </entry>
       </file>
@@ -152,6 +150,7 @@
       <find>package</find>
       <find>get</find>
       <find>getDistance</find>
+      <find>makeNotification</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -11652,10 +11651,7 @@
         <option value="$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/MusicService.java" />
         <option value="$PROJECT_DIR$/c18_started_service/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/c18_started_service/build.gradle" />
-        <option value="$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/MainActivity.java" />
         <option value="$PROJECT_DIR$/c19_bound_service/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/MainActivity.java" />
-        <option value="$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/OdometerService.java" />
         <option value="$PROJECT_DIR$/c19_bound_service_2/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/Odometer.aidl" />
         <option value="$PROJECT_DIR$/c19_bound_service/src/main/aidl/com/chinalwb/c19_bound_service/Iodometer.aidl" />
@@ -11663,15 +11659,18 @@
         <option value="$PROJECT_DIR$/c19_bound_service_2/src/main/aidl/com/chinalwb/c19_bound_service_2/Iodometer.aidl" />
         <option value="$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/RemoteOdometerService.java" />
         <option value="$PROJECT_DIR$/c19_bound_service_2/src/main/java/com/chinalwb/c19_bound_service/MainActivity.java" />
-        <option value="$PROJECT_DIR$/c19_bound_service/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/MainActivity2.java" />
+        <option value="$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/OdometerService.java" />
+        <option value="$PROJECT_DIR$/c19_bound_service/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/MainActivity.java" />
+        <option value="$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/MainActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1057" />
-    <option name="y" value="24" />
-    <option name="width" value="991" />
+    <option name="x" value="1050" />
+    <option name="y" value="22" />
+    <option name="width" value="998" />
     <option name="height" value="1089" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -11682,8 +11681,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -11708,17 +11705,13 @@
             </path>
             <path>
               <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="c19_bound_service_2" type="feadf853:AndroidModuleNode" />
+              <item name="c19_bound_service" type="feadf853:AndroidModuleNode" />
+              <item name="aidl" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
               <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="c19_bound_service_2" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="c19_bound_service_2" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="c19_bound_service" type="feadf853:AndroidModuleNode" />
+              <item name="aidl" type="edd41e36:AndroidSourceTypeNode" />
               <item name="c19_bound_service" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
           </expand>
@@ -11736,6 +11729,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -11747,7 +11742,7 @@
     <property name="android.project.structure.last.selected" value="c18_started_service" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
-    <property name="device.picker.selection" value="Nexus_5X_API_26" />
+    <property name="device.picker.selection" value="GSL0217721000593" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/c14_navigation_drawer/src/main/res/drawable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -11781,7 +11776,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android App.c19_bound_service_2">
+  <component name="RunManager" selected="Android App.c19_bound_service">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -12392,7 +12387,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1057" y="24" width="991" height="1089" extended-state="0" />
+    <frame x="1050" y="22" width="998" height="1089" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="7" />
@@ -12402,17 +12397,15 @@
       <window_info id="Build Variants" order="2" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Preview" order="3" weight="0.32887974" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.23632611" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32920536" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="7" visible="true" weight="0.44066048" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="7" visible="true" weight="0.47884417" />
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29926237" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.39435145" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.24045408" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32920536" />
       <window_info anchor="right" id="Gradle" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993808" />
@@ -12420,11 +12413,13 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Preview" order="3" weight="0.32887974" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32920536" />
     </layout>
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -12462,13 +12457,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/OdometerService.java</url>
-          <line>18</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/OdometerService.java</url>
-          <line>25</line>
+          <line>77</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
@@ -12477,23 +12466,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/database/sqlite/SQLiteOpenHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="150" column="57" lean-forward="true" selection-start-line="150" selection-start-column="57" selection-end-line="150" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/platforms/android-28/data/res/layout/simple_expandable_list_item_1.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="33" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/c7_listview/src/main/res/drawable/cappuccino.jpeg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -12672,13 +12644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7a6756eeb958c0833fa847d5bfe68511/jars/classes.jar!/android/support/v4/app/NotificationCompat.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="2452" column="63" lean-forward="true" selection-start-line="2452" selection-start-column="63" selection-end-line="2452" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/app/PendingIntent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
@@ -12693,16 +12658,6 @@
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c18_started_service/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
         <state />
       </provider>
     </entry>
@@ -12727,13 +12682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/c4_lifecycle/src/main/java/com/chinalwb/c4_lifecycle/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
@@ -12751,20 +12699,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/OdometerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/c19_bound_service_2/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -12775,25 +12709,8 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/c19_bound_service/src/main/aidl/com/chinalwb/c19_bound_service/IMyInterface.aidl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c19_bound_service/src/main/aidl/com/chinalwb/c19_bound_service/Odometer.aidl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c19_bound_service/src/main/aidl/com/chinalwb/c19_bound_service/Iodometer.aidl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/c19_bound_service/src/main/aidl/com/chinalwb/c19_bound_service/IMyInterface.aidl" />
+    <entry file="file://$PROJECT_DIR$/c19_bound_service/src/main/aidl/com/chinalwb/c19_bound_service/Odometer.aidl" />
     <entry file="file://$PROJECT_DIR$/c19_bound_service/build/generated/source/aidl/debug/com/chinalwb/c19_bound_service/Iodometer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -12801,17 +12718,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/c19_bound_service_2/build/generated/source/aidl/debug/com/chinalwb/c19_bound_service_2/Iodometer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="72" column="12" lean-forward="true" selection-start-line="72" selection-start-column="12" selection-end-line="72" selection-end-column="12" />
-          <folding>
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/c19_bound_service_2/build/generated/source/aidl/debug/com/chinalwb/c19_bound_service_2/Iodometer.java" />
     <entry file="file://$PROJECT_DIR$/c19_bound_service_2/src/main/aidl/com/chinalwb/c19_bound_service/Iodometer.aidl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -12819,20 +12726,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/c19_bound_service_2/src/main/java/com/chinalwb/c19_bound_service/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -12840,27 +12737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
           <caret line="715" column="16" selection-start-line="715" selection-start-column="16" selection-end-line="715" selection-end-column="16" />
-          <folding>
-            <element signature="e#20722#20723#0" expanded="true" />
-            <element signature="e#20763#20764#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c19_bound_service/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/RemoteOdometerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -12873,8 +12749,99 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/MainActivity2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+        <state relative-caret-position="219">
+          <caret line="79" column="5" lean-forward="true" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
+          <folding>
+            <element signature="e#1296#1297#0" expanded="true" />
+            <element signature="e#1327#1328#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c19_bound_service/src/main/aidl/com/chinalwb/c19_bound_service/Iodometer.aidl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/RemoteOdometerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+          <folding>
+            <element signature="e#407#590#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/location/LocationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="582" column="7" selection-start-line="581" selection-start-column="7" selection-end-line="582" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/os/Build.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4393">
+          <caret line="219" column="11" selection-start-line="219" selection-start-column="11" selection-end-line="219" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/OdometerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c19_bound_service/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c18_started_service/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/7a6756eeb958c0833fa847d5bfe68511/jars/classes.jar!/android/support/v4/app/NotificationCompat.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="2464" column="9" selection-start-line="2464" selection-start-column="9" selection-end-line="2464" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="81" column="36" lean-forward="true" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="138" column="18" lean-forward="true" selection-start-line="138" selection-start-column="18" selection-end-line="138" selection-end-column="18" />
+          <folding>
+            <element signature="e#4374#4552#0" expanded="true" />
+            <element signature="e#4551#4552#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
