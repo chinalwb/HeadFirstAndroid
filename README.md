@@ -1304,11 +1304,94 @@ public void onRequestPermissionsResult(
 }
 ```
 
+### Gradle
+
+* Each time you create a new project, Android Studio creates two files called build.gradle
+* One is in the project folder, contains the gradle version and which repository to use
+* If you want to install a 3rd party plug-in or specify another place to download libraries, chagne the gradle file in the project folder
+* The other one is your app's main gradle file, lives inside the app folder. This file tells Gradle how to build all of the code
+
+### The Android Runtime
+
+* ART means Android Runtime
+* Java source code will be compiled into .class then into .dex
+* .dex file is executable bytecodes run on Dalvik
+* A single dex file can only contain as many as 65535 methods, you need to split the dex into smaller ones with multidex technique
+* .dex file are created by a tool called dx - d8 is the latest tool
+* DEX files are zipped into APK files, so APK contains everything that make up the app, images, sounds, metadata, .dex and so on.
+* Sign the app before submitting to play store, use jarsigner, also need to run the jarsigner through a tool called zipalign.
+* Android Debug Bridge (adb) - all communications between the development machine and the android device take place over the ADB
+* adb is a tool on the dev machine
+* And on Android device, there is a adbd - Android Debug Bridge Daemon
+* Run adb means to start a server (port 5037) on the dev machine
+* `adb install xx.apk` will transfer the apk file to Android device and install the app into /data/app directory.
+* For running the apk file on device, Android needs to turn the apk file into a process running in memory
+* When Android tries to run your apk, it will fork a new process from Zygote, then the new process will load the apk into memory and run
+* Before running the apk, Android extracts the classes.dex from apk and place it into a separated directory. 
+* Android will not use the classes.dex file directly, instead Android will conver the dex file into native machine code. The tool convert dex into native machine code (odex) is dex2oat.
+* The converted file is stored into a directory named something like: `/data/dalvik-cache/data@app@com.xx.yy@base.apk@classes.dex`
+* The oat file then can be loaded as a native library by the application process. Then the app appears on the screen.
+
+### Android Debug Bridge
+
+* adb talks to adbd (server:5037) for each command
+* adb shell -- open a shell -- if there are multiple devices, use `adb -s <DEVICE> shelll`
+* pm - package management tool
+	- `pm list packages`
+* ps - process status
+	- ps 
+* dexdump - display details of an APK
+	- dexdump -d /data/app/xx/base.apk
+* lsof - list a process open files and other connections
+	- lsof -p 1234 -- show what process with id 1234 is doing
+* screencap
+	- screencap -p /sdcard/xx.png - run in shell
+	- adb pull /sdcard/xx.png - run from dev machine
+* top
+	- top -m 5
+
+----
+
+* Each of these commands works from an interactive shell prompt, like: `adb shell pm list packages`
+
+* Kill adb server - ` adb kill-server`
+* Get the output from logcat - `adb logcat`
+* adb pull <PATH ON PHONE> <PATH_ON_DEV_MACHINE> - `adb pull /default.prop 1.txt`
+
+### Android emulator and iPhone simulator
+
+* iPhone simulator runs the code which have been compiled on Mac, it simulates a device running the iOS operating system
+* Android emulator is based on QEMU (Quick Emulator) to emulate the entire Android hardware device. 他解释执行了那些本应该在Android设备上执行的代码。 他还模拟了所有的硬件设备，比如存储系统、显示系统等等。
 
 
-
-
-
+### Leftovers
+ 
+2. Content Provider
+	- Use intent to start activities in other apps
+	- Use Content Provider to contact with other apps data
+	- 
+3. Loaders - helps you load data
+	- runs on separated threads in the background
+	- makes it easier to manage threads by providing callback methods
+4. Sync adapters - synchronize data between an Android device and a web server
+5. Broadcasts, kinds of system broadcasts includes:
+	- headphones removed or inserted
+	- low on power
+	- incoming call
+	- system booted
+6. Webview
+	- `webview.loadUrl()`
+7. Settings
+	- Use the Preferences API
+	- Allow you to add individual preference and record a value for each preference
+8. Animation
+	- Property animation
+	- View animations
+	- Activity transitions
+9. App widgets
+10. Automated testing
+	- Unit tests - run out of the app
+	- Espresso - a separated package installed to interact with your app in the same way as a user
 
 
 	
