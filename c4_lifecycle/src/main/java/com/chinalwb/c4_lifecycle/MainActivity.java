@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void startActivity() {
         Intent intent = new Intent(this, C4_SecondActivity.class);
-//        startActivity(intent);
+        startActivity(intent);
     }
 
     @Override
