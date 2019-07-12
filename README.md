@@ -185,7 +185,7 @@ public void onClickFindBeer(View view) {
 2018-12-05 06:14:17.297 19037-19037/com.chinalwb.c4_lifecycle E/XX: onCreate
 2018-12-05 06:14:17.320 19037-19037/com.chinalwb.c4_lifecycle E/XX: onStart
 2018-12-05 06:14:17.323 19037-19037/com.chinalwb.c4_lifecycle E/XX: onResume
-```	
+```
 
 * onRestart() -- Called when your activity has been stopped but just before it gets started again
 	- onRestart 的调用时机：
@@ -203,11 +203,11 @@ public void onClickFindBeer(View view) {
 	
 
 ### 6. ConstraintLayout
-	
+
 	`app:layout_constraintRight_toRightOf='parent'`
-	
+
 ### 7. ListView
-	
+
 * An Adapter acts as a bridge between a view and a data source.
 	
 * Use of `android:entries`
@@ -328,7 +328,6 @@ onDestroy(3)|onDetach() // Called when fragment finally loses contact with the a
 	3. commit
 		* transaction.commit();
 
-	
 * Fragment#onSaveInstanceState(Bundle outState) // 当Fragment被销毁的之前回调这个方法来保存状态
 * Fragment#onCreate(Bundle savedInstanceState) // 当Fragment重建的时候之前保存的状态会传递到 savedInstanceState 里面
 
@@ -385,7 +384,7 @@ onDestroy(3)|onDetach() // Called when fragment finally loses contact with the a
 	app:layout_scrollFlags="scroll|enterAlways"
 />
 ```
-	
+
 - layout_scrollFlags: scroll 表示当用户滑动其他控件的时候，这个控件(Toolbar)也跟着一起滑动。如果没有设定这个值，这个控件就不会滑动。
 - enterAlways: 当用户滑动其他view的时候，这个view会快速滑动到他最初的位置。如果没有设定这个值，他也会滑动，但是会比较慢。
 - exitUntilCollapsed: This means we want the toolbar to collapse until it's done collapsing
@@ -431,7 +430,7 @@ onDestroy(3)|onDetach() // Called when fragment finally loses contact with the a
 	- 1. Craete views
 	- 2. Bind each view to a piece of data
 	- Q: Why doesn't Android provide ready-made adapters for recycler views?
-	- A: Because recycler view adapters don't just specify the data that will appear. They also specify the views that will be used for each item in the collection. That means that recycl      er view adapters are both more powerful, and less general, than the list view adapters.
+	- A: Because recycler view adapters don't just specify the data that will appear. They also specify the views that will be used for each item in the collection. That means that recycler view adapters are both more powerful, and less general, than the list view adapters.
 2. LayoutManager - There are a number of built-in layout managers you can use that allow you to position items in a linear list or grid
 	- RecyclerViewe uses a layout manager to arrange its views
 3. `recyclerView.setAdapter(adapter)` // set adapter to recycler view
@@ -684,8 +683,9 @@ class CaptionedImagesAdapter extends RecyclerView.Adapter<CaptionedImagesAdapter
 	3. It's stable and fast. Transaction supported
 
 * Where is the database stored?
-	- /data/data/<YOUR_PACKAGE_ID>/databases
-
+	
+- /data/data/<YOUR_PACKAGE_ID>/databases
+	
 * Every database consists of two files
 	1. Database file
 	2. Journal file
@@ -695,14 +695,14 @@ class CaptionedImagesAdapter extends RecyclerView.Adapter<CaptionedImagesAdapter
 	2. The SQLite Database - The SQLiteDatabase class gives you access to the database. It's like a SQLConnection in JDBC
 	3. Curosr - A cursor lets you read from and write to the database. It's like a ResultSet in JDBC.
 
-	
 * Q: SQLite database has no username and password on the database, how is it kept secure?
-	- The directory /data/data/<PACKAGE_ID>/databases is only readable by the app itself. The database is secured down at the operating system level.
-
-* Create the SQLite helper
+	
+- The directory /data/data/<PACKAGE_ID>/databases is only readable by the app itself. The database is secured down at the operating system level.
+	
+* Create the SQLite helper — 创建和更新数据库表 — 在 onCreate / onUpgrade 回调方法中已经准备好了 SQLiteDatabase对象, 在这两个回调方法中应该操作数据库表的创建和更新
 	- extends SQLiteOpenHelper
-	- Override onCreate - onCreate() gets called when the database first gets created on the device. Create tables in this method.
-	- Override onUpgrade - onUpgrade() gets called when the database needs to be upgraded.
+	- Override onCreate - onCreate(SQLiteDatabase db) gets called when the database first gets created on the device. Create tables in this method.
+	- Override onUpgrade - onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) gets called when the database needs to be upgraded.
 
 * Specify the database
 	- we need to give the database a name. Without a name, the database will disappear oncethe atabase is closed
@@ -918,6 +918,7 @@ public void onDestroy() {
 
 
 * SQLiteOpenHelper
+	
 	- onUpgrade - change DB_VERSION to 2, then onUpgrade method gets called
 	
 * db.update
@@ -999,7 +1000,6 @@ new MyAsyncTask().execute(Params..);
 	- alarm service
 	- download service
 
-	
 * There are 3 types of services:
 	1. Started Service
 		- A started service can run in the background indefinitely. (可以一直运行)
@@ -1013,7 +1013,6 @@ new MyAsyncTask().execute(Params..);
 	3. Scheduled Service
 		- A scheduled service is one that's scheduled to run at a particular time. From API 21, you can schedule jobs to run at an appropriate time. (Scheduled service可以指定代码在某个具体时间来执行)
 
-		
 * Started Service && IntentService
 	- 可以 extends IntentService 来实现一个 Started Service
 	- override IntentService 里面的 onHandleIntent(Intent intent) 方法
@@ -1174,7 +1173,6 @@ private ServiceConnection = new ServiceConnection() {
 	5. onDestroy() - called when no component are bound to the service and it's about to be destroyed
 	6. After the onDestroy() has run, the service is destroyed
 
-	
 * Runtime permission request
 	- Permission -- `<users-permission android:name="android.permission.ACCESS_FINE_LOCATION" />`
 	- Runtime SDK version >= 23, then request permission at runtime
@@ -1365,7 +1363,7 @@ public void onRequestPermissionsResult(
 
 
 ### Leftovers
- 
+
 2. Content Provider
 	- Use intent to start activities in other apps
 	- Use Content Provider to contact with other apps data
@@ -1394,7 +1392,7 @@ public void onRequestPermissionsResult(
 	- Espresso - a separated package installed to interact with your app in the same way as a user
 
 
-	
+​	
 
 
 

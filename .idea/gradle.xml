@@ -17,8 +17,8 @@
             <option value="$PROJECT_DIR$/c4_lifecycle" />
             <option value="$PROJECT_DIR$/c5_view_and_viewgroups" />
             <option value="$PROJECT_DIR$/c6_constraints_layout" />
-            <option value="$PROJECT_DIR$/c7_listview" />
-            <option value="$PROJECT_DIR$/c8_toolbar" />
+            <option value="$PROJECT_DIR$/c7_listview__SQLite" />
+            <option value="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view" />
             <option value="$PROJECT_DIR$/c9_fragment" />
           </set>
         </option>

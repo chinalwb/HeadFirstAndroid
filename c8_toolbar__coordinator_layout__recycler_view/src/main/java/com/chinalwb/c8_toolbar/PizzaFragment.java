@@ -53,7 +53,8 @@ public class PizzaFragment extends Fragment {
             }
         });
 
-        GridLayoutManager layoutManager = new GridLayoutManager(getActivity(), 2);
+        StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(3,
+                StaggeredGridLayoutManager.VERTICAL);
         pizzaRecycler.setLayoutManager(layoutManager);
 
 //        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
