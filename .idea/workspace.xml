@@ -8,7 +8,7 @@
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CUSTOM_FILTER" value="XX" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
     <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
   </component>
   <component name="AutomaticModuleUnloader">
@@ -79,120 +79,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b00fa509-2e44-4a88-be4a-0b0218c39a3f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/c20_others/src/main/java/com/chinalwb/c20_others/Main2Activity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c20_others/src/main/res/layout/activity_main2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c20_others/src/main/res/layout/content_main2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/java/com/chinalwb/c8_toolbar/Main2Activity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/layout/activity_main2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/layout/content_main2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/values/dimens.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c14_navigation_drawer/c14_navigation_drawer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/c14_navigation_drawer/c14_navigation_drawer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c20_others/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/c20_others/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c20_others/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c20_others/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c20_others/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c20_others/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c20_others/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c20_others/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c4_lifecycle/c4_lifecycle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/c4_lifecycle/c4_lifecycle.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c5_view_and_viewgroups/c5_view_and_viewgroups.iml" beforeDir="false" afterPath="$PROJECT_DIR$/c5_view_and_viewgroups/c5_view_and_viewgroups.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/c7_listview.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/proguard-rules.pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/androidTest/java/com/chinalwb/c7_listview/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/androidTest/java/com/chinalwb/c7_listview/ExampleInstrumentedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/java/com/chinalwb/c7_listview/Drink.java" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/java/com/chinalwb/c7_listview/Drink.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/java/com/chinalwb/c7_listview/DrinkActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/java/com/chinalwb/c7_listview/DrinkActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/java/com/chinalwb/c7_listview/DrinkCategoryActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/java/com/chinalwb/c7_listview/DrinkCategoryActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/java/com/chinalwb/c7_listview/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/java/com/chinalwb/c7_listview/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/java/com/chinalwb/c7_listview/StarbuzzDatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/java/com/chinalwb/c7_listview/StarbuzzDatabaseHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/drawable/cappuccino.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/drawable/cappuccino.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/drawable/filter.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/drawable/filter.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/drawable/latte.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/drawable/latte.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/drawable/starbucks.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/drawable/starbucks.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/layout/activity_drink.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/layout/activity_drink.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/layout/activity_drink_category.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/layout/activity_drink_category.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/layout/content_drink_category.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/layout/content_drink_category.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c20_others/src/main/res/values/dimens.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c7_listview/src/test/java/com/chinalwb/c7_listview/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/c7_listview__SQLite/src/test/java/com/chinalwb/c7_listview/ExampleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/c8_toolbar.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/proguard-rules.pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/androidTest/java/com/chinalwb/c8_toolbar/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/androidTest/java/com/chinalwb/c8_toolbar/ExampleInstrumentedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/CaptionedImagesAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/java/com/chinalwb/c8_toolbar/CaptionedImagesAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/java/com/chinalwb/c8_toolbar/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/OrderActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/java/com/chinalwb/c8_toolbar/OrderActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/PastaFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/java/com/chinalwb/c8_toolbar/PastaFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/java/com/chinalwb/c8_toolbar/Pizza.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/PizzaDetailActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/java/com/chinalwb/c8_toolbar/PizzaDetailActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/PizzaDetailFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/java/com/chinalwb/c8_toolbar/PizzaDetailFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/PizzaFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/java/com/chinalwb/c8_toolbar/PizzaFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/StoresFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/java/com/chinalwb/c8_toolbar/StoresFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/java/com/chinalwb/c8_toolbar/TopFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/java/com/chinalwb/c8_toolbar/TopFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/drawable-hdpi/ic_add_white_24dp.png" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/drawable-hdpi/ic_add_white_24dp.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/drawable-hdpi/ic_done_white_24dp.png" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/drawable-hdpi/ic_done_white_24dp.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/drawable-mdpi/ic_add_white_24dp.png" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/drawable-mdpi/ic_add_white_24dp.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/drawable-mdpi/ic_done_white_24dp.png" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/drawable-mdpi/ic_done_white_24dp.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/drawable-nodpi/diavolo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/drawable-nodpi/diavolo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/drawable-nodpi/funghi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/drawable-nodpi/funghi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/drawable-nodpi/restaurant.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/drawable-nodpi/restaurant.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/drawable-xhdpi/ic_add_white_24dp.png" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/drawable-xhdpi/ic_add_white_24dp.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/drawable-xhdpi/ic_done_white_24dp.png" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/drawable-xhdpi/ic_done_white_24dp.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/drawable-xxhdpi/ic_add_white_24dp.png" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/drawable-xxhdpi/ic_add_white_24dp.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/drawable-xxhdpi/ic_done_white_24dp.png" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/drawable-xxhdpi/ic_done_white_24dp.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/drawable-xxxhdpi/ic_add_white_24dp.png" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/drawable-xxxhdpi/ic_add_white_24dp.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/drawable-xxxhdpi/ic_done_white_24dp.png" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/drawable-xxxhdpi/ic_done_white_24dp.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/activity_order.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/layout/activity_order.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/activity_pizza_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/layout/activity_pizza_detail.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/card_captioned_image.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/layout/card_captioned_image.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/fragment_pizza.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/layout/fragment_pizza.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/fragment_pizza_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/layout/fragment_pizza_detail.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/fragment_top.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/layout/fragment_top.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/layout/tool_bar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/layout/tool_bar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/menu/menu_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/menu/menu_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c8_toolbar/src/test/java/com/chinalwb/c8_toolbar/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/test/java/com/chinalwb/c8_toolbar/ExampleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c9_fragment/c9_fragment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/c9_fragment/c9_fragment.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/LogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/LogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -215,58 +114,32 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c20_others/src/main/java/com/chinalwb/c20_others/MainActivity.java">
+        <entry file="file://$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c20_others/src/main/java/com/chinalwb/c20_others/Main2Activity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-              <folding>
-                <element signature="e#1004#1444#0" expanded="true" />
-                <element signature="e#1443#1444#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="164">
+              <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/java/com/chinalwb/c8_toolbar/PizzaFragment.java">
+        <entry file="file://$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/LogService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="55" column="48" lean-forward="true" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="158">
+              <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/view/MotionEvent.java">
+        <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/app/IntentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="2455" column="23" selection-start-line="2455" selection-start-column="23" selection-end-line="2455" selection-end-column="23" />
+            <state relative-caret-position="117">
+              <caret line="93" column="6" selection-start-line="93" selection-start-column="6" selection-end-line="93" selection-end-column="6" />
               <folding>
-                <element signature="e#81879#81880#0" expanded="true" />
-                <element signature="e#81960#81961#0" expanded="true" />
+                <element signature="e#4128#4129#0" expanded="true" />
+                <element signature="e#4165#4166#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/c20_others/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -298,7 +171,6 @@
       <find>mCursorFactory</find>
       <find>db</find>
       <find>setIntentRedelivery</find>
-      <find>mRedelivery</find>
       <find>HandlerThread</find>
       <find>mServiceLooper</find>
       <find>onHandleIntent</find>
@@ -306,6 +178,7 @@
       <find>get</find>
       <find>getDistance</find>
       <find>makeNotification</find>
+      <find>mRedelivery</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -314,7 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/c14_navigation_drawer/src/main/res/layout/toolbar_main.xml" />
         <option value="$PROJECT_DIR$/c14_navigation_drawer/src/main/res/layout/activity_help.xml" />
         <option value="$PROJECT_DIR$/c14_navigation_drawer/src/main/java/com/chinalwb/c14_navigation_drawer/HelpActivity.java" />
         <option value="$PROJECT_DIR$/c14_navigation_drawer/src/main/res/layout/nav_header.xml" />
@@ -335,7 +207,6 @@
         <option value="$PROJECT_DIR$/c7_listview/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/c7_listview/src/main/java/com/chinalwb/c7_listview/MainActivity.java" />
         <option value="$PROJECT_DIR$/c7_listview/src/main/java/com/chinalwb/c7_listview/DrinkActivity.java" />
-        <option value="$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/LogService.java" />
         <option value="$PROJECT_DIR$/c18_started_service/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/MusicService.java" />
         <option value="$PROJECT_DIR$/c18_started_service/src/main/res/layout/activity_main.xml" />
@@ -351,7 +222,6 @@
         <option value="$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/MainActivity2.java" />
         <option value="$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/OdometerService.java" />
         <option value="$PROJECT_DIR$/c19_bound_service/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/MainActivity.java" />
         <option value="$PROJECT_DIR$/c19_bound_service/src/main/java/com/chinalwb/c19_bound_service/MainActivity.java" />
         <option value="$PROJECT_DIR$/c20_others/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/c4_lifecycle/src/main/java/com/chinalwb/c4_lifecycle/MainActivity.java" />
@@ -365,11 +235,14 @@
         <option value="$PROJECT_DIR$/c20_others/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/c20_others/src/main/java/com/chinalwb/c20_others/Main2Activity.java" />
         <option value="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/java/com/chinalwb/c8_toolbar/PizzaFragment.java" />
+        <option value="$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/java/com/chinalwb/c8_toolbar/MainActivity.java" />
+        <option value="$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/MainActivity.java" />
+        <option value="$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/LogService.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="24" />
     <option name="width" value="1440" />
     <option name="height" value="829" />
   </component>
@@ -378,8 +251,30 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
+              <item name="c18_started_service" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
+              <item name="c18_started_service" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
+              <item name="c18_started_service" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="c18_started_service" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -391,54 +286,6 @@
               <item name="HeadFirstAndroid" type="b2602c69:ProjectViewProjectNode" />
               <item name="HeadFirstAndroid" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="c6_constraints_layout" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="c8_toolbar__coordinator_layout__recycler_view" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="c8_toolbar__coordinator_layout__recycler_view" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="c8_toolbar__coordinator_layout__recycler_view" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="c8_toolbar" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="c20_others" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="c20_others" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="c20_others" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="c20_others" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="c20_others" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="HeadFirstAndroid" type="1abcf292:AndroidViewProjectNode" />
-              <item name="c20_others" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
           </expand>
           <select />
@@ -469,14 +316,13 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/c14_navigation_drawer/src/main/res/drawable" />
-      <recent name="$PROJECT_DIR$/c8_toolbar/src/main/res/layout" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/c19_bound_service/src/main/aidl/com/chinalwb/c19_bound_service" />
     </key>
     <key name="android.template.packageName">
+      <recent name="com.chinalwb.c8_toolbar" />
       <recent name="com.chinalwb.c20_others" />
       <recent name="com.chinalwb.c14_navigation_drawer" />
-      <recent name="com.chinalwb.c8_toolbar" />
       <recent name="com.chinalwb.c9_fragment" />
     </key>
     <key name="android.template.parentActivityClass">
@@ -485,8 +331,9 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.chinalwb.c19_bound_service" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/c19_bound_service/src/main/aidl/com/chinalwb/c19_bound_service" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/c14_navigation_drawer/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/c8_toolbar/src/main/res/layout" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -501,7 +348,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android App.c20_others">
+  <component name="RunManager" selected="Android App.c18_started_service">
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="HTML_FILE_NAME" />
@@ -1237,7 +1084,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="829" extended-state="0" />
+    <frame x="0" y="24" width="1440" height="829" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49796748" visible="true" weight="0.24892704" />
@@ -1256,12 +1103,12 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49928468" weight="0.30393487" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49713877" weight="0.30393487" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.31759655" side_tool="true" visible="true" weight="0.3514247" />
-      <window_info active="true" anchor="bottom" id="Logcat" order="10" sideWeight="0.68240345" visible="true" weight="0.3514247" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.31831187" side_tool="true" visible="true" weight="0.504749" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="10" sideWeight="0.68168813" visible="true" weight="0.504749" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.23632611" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49642345" weight="0.32700136" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49427754" weight="0.32700136" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1319,124 +1166,15 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/c5_view_and_viewgroups/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c4_lifecycle/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="38" selection-start-column="27" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.gradle/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/proguard-rules.pro">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c4_lifecycle/proguard-rules.pro">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/chinalwb/headfirstandroid/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c6_constraints_layout/gradlew" />
-    <entry file="file://$PROJECT_DIR$/c6_constraints_layout/gradlew.bat" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c6_constraints_layout/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="31" column="41" lean-forward="true" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c6_constraints_layout/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c6_constraints_layout/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c6_constraints_layout/src/main/java/com/chinalwb/c6_constraints_layout/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-          <folding>
-            <element signature="e#1904#1944#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/layout/fragment_top.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/layout/fragment_pizza_detail.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/layout/activity_order.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="28" column="46" lean-forward="true" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
@@ -1446,21 +1184,12 @@
           </folding>
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/c7_listview__SQLite/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="33" column="41" lean-forward="true" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/java/com/chinalwb/c8_toolbar/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1510,12 +1239,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/c7_listview__SQLite/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/c7_listview__SQLite/src/main/java/com/chinalwb/c7_listview/DrinkActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1524,13 +1253,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/1291c6ceeec11bae03d8c633e6a2595b/jars/classes.jar!/android/support/v7/app/AppCompatActivity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="85" column="31" lean-forward="true" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1653,28 +1375,28 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/c20_others/src/main/res/layout/content_main2.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/c20_others/src/main/res/layout/activity_main2.xml">
-      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="10" column="44" lean-forward="true" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/c20_others/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/view/MotionEvent.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1687,10 +1409,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/java/com/chinalwb/c8_toolbar/PizzaFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/c20_others/src/main/java/com/chinalwb/c20_others/Main2Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        <state relative-caret-position="64">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
           <folding>
             <element signature="e#1004#1444#0" expanded="true" />
             <element signature="e#1443#1444#0" expanded="true" />
@@ -1698,13 +1430,150 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/java/com/chinalwb/c8_toolbar/PizzaFragment.java">
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/os/CountDownTimer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="55" column="48" lean-forward="true" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
+        <state relative-caret-position="112">
+          <caret line="46" column="49" lean-forward="true" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/1291c6ceeec11bae03d8c633e6a2595b/jars/classes.jar!/android/support/v7/app/AppCompatActivity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="38" column="47" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/377f9894ba8b8f8953986fc3c1abd3da/jars/classes.jar!/android/support/v4/app/FragmentActivity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/50782c5cb4c7620ce79708d5abc432be/jars/classes.jar!/android/support/v4/app/SupportActivity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/app/Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9136">
+          <caret line="708" column="39" selection-start-line="708" selection-start-column="39" selection-end-line="708" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/view/ContextThemeWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/java/com/chinalwb/c8_toolbar/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c4_lifecycle/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c4_lifecycle/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/cc167805e59e72bcc98f60ce4bc9367e/res/values/values.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="57" lean-forward="true" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+          <folding>
+            <element signature="e#1991#2031#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/java/com/chinalwb/c8_toolbar/Main2Activity.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/layout/content_main2.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/platforms/android-28/data/res/drawable-hdpi/ic_dialog_email.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c8_toolbar__coordinator_layout__recycler_view/src/main/res/layout/activity_main2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/content/ContextWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="667" column="25" selection-start-line="667" selection-start-column="25" selection-end-line="667" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/content/Context.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="2792" column="34" selection-start-line="2792" selection-start-column="34" selection-end-line="2792" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-28/android/app/IntentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="93" column="6" selection-start-line="93" selection-start-column="6" selection-end-line="93" selection-end-column="6" />
+          <folding>
+            <element signature="e#4128#4129#0" expanded="true" />
+            <element signature="e#4165#4166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Android/sdk/platforms/android-28/data/res/drawable/stat_sys_download.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-261" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/c18_started_service/src/main/java/com/chinalwb/c18_started_service/LogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
         </state>
       </provider>
     </entry>

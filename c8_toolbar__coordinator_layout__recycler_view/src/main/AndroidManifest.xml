@@ -10,6 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,9 +24,10 @@
         <activity
             android:name=".OrderActivity"
             android:label="@string/order_activity_name"
-            android:parentActivityName=".MainActivity"></activity>
-        <activity android:name=".PizzaDetailActivity"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PizzaDetailActivity"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

@@ -4,7 +4,6 @@ android {
     compileSdkVersion 28
 
 
-
     defaultConfig {
         applicationId "com.chinalwb.c8_toolbar"
         minSdkVersion 19
